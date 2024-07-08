@@ -58,7 +58,7 @@ I'm **Valerie Jerono**, a passionate Data Scientist with a robust background in 
 - Support the development of more responsive and inclusive policies.
 
 **Visualizations:**
-- ![Visualization](images/empz.png) <!-- Ensure the path to the image is correct -->
+- ![Visualization](empz.png) <!-- Ensure the path to the image is correct -->
 
 ---
 
