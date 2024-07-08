@@ -6,12 +6,11 @@ I'm **Valerie Jerono**, a passionate Data Scientist with a robust background in 
 
 ### 📫 How to reach me:
 - **LinkedIn:** [Valerie Jerono](https://www.linkedin.com/in/valerie-jerono)
-
-- **Instagram:** [v_on_detta]
+- **Instagram:** [v_on_detta](https://www.instagram.com/v_on_detta/)
 
 ---
 
-### 🌟 Interests:
+### 🌟 Interests
 - **Machine Learning:** Exploring and implementing various machine learning algorithms to solve real-world problems.
 - **Data Engineering:** Building and maintaining data pipelines and ETL processes.
 - **Predictive Modeling:** Developing models to forecast trends and inform business decisions.
@@ -22,7 +21,7 @@ I'm **Valerie Jerono**, a passionate Data Scientist with a robust background in 
 
 ### 🛠 Skills
 
-#### Technical Skills:
+#### **Technical Skills:**
 - **Programming Languages:** Python, SQL
 - **Machine Learning:** Regression, Classification, Clustering, Neural Networks, RandomForest, XGBoost
 - **Data Engineering:** ETL, Data Pipelines, Data Cleaning, Data Preprocessing
@@ -31,7 +30,7 @@ I'm **Valerie Jerono**, a passionate Data Scientist with a robust background in 
 - **Database Management:** MySQL
 - **Tools:** Jupyter, Git, Pandas, Scikit-learn, TensorFlow, Keras, Streamlit
 
-#### Soft Skills:
+#### **Soft Skills:**
 - Strong Analytical and Problem-Solving Skills
 - Effective Communication and Presentation
 - Team Collaboration and Leadership
@@ -59,8 +58,9 @@ I'm **Valerie Jerono**, a passionate Data Scientist with a robust background in 
 - Support the development of more responsive and inclusive policies.
 
 **Visualizations:**
-- ![Visualization](empz.png)
+- ![Visualization](images/empz.png) <!-- Ensure the path to the image is correct -->
 
 ---
 
 Thank you for visiting my GitHub profile! Feel free to reach out if you have any questions or collaboration opportunities.
+
