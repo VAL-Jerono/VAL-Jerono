@@ -1,66 +1,82 @@
-## Hi there 👋
 
-I'm **Valerie Jerono**, a passionate Data Scientist with a robust background in data engineering, machine learning, and predictive modeling. I leverage data-driven insights to enhance operational efficiency and achieve optimal outcomes. I'm currently seeking opportunities to apply my analytical skills, technical expertise, and enthusiasm for data analysis in a dynamic role that fosters continuous learning and innovation.
+# Hey, I’m Valerie Jerono 👋
 
----
+**Data Scientist  | Data Storyteller | Risk and Behavior Analyst | AI and Insight Enthusiast**
 
-### 📫 How to reach me:
-- **LinkedIn:** [Valerie Jerono](https://www.linkedin.com/in/valerie-jerono)
-- **Instagram:** [v_on_detta](https://www.instagram.com/v_on_detta/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/valerie-jerono)
+[![Email](https://img.shields.io/badge/Gmail-Say%20Hello-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:kipropvalerie@gmail.com)
 
 ---
 
-### 🌟 Interests
-- **Machine Learning:** Exploring and implementing various machine learning algorithms to solve real-world problems.
-- **Data Engineering:** Building and maintaining data pipelines and ETL processes.
-- **Predictive Modeling:** Developing models to forecast trends and inform business decisions.
-- **Data Visualization:** Creating insightful and impactful visualizations to communicate data findings.
-- **Continuous Learning:** Staying updated with the latest trends and advancements in data science and technology.
+## 🌍 The Short Version
+
+I help numbers make sense and stories make an impact.
+
+My roots are in **actuarial science** where I mastered the precision of numbers, yet curiosity soon drew me into the broader world of data science and analytics. Now I work at the intersection of **risk, behaviour, and intelligent systems,** turning a pile of possibilities into practical, actionable decisions.
+
+If you arrived expecting just another developer profile, you may want to pour yourself a coffee and stay a little longer. I see data not simply as numbers in a spreadsheet, but as a living map of behaviours, risks, opportunities, and stories that have not yet been told.
+
+Over the years, my journey has moved from calculating probabilities to building models that **explain, predict, and guide decisions** in the real world. Whether I am working on predictive algorithms, behavioural analytics, or data pipelines, my goal is always the same: create insights that are not only **accurate** but truly **meaningful** to the people who use them.
 
 ---
 
-### 🛠 Skills
+## 🧠 How I Approach Data
 
-#### **Technical Skills:**
-- **Programming Languages:** Python, SQL
-- **Machine Learning:** Regression, Classification, Clustering, Neural Networks, RandomForest, XGBoost
-- **Data Engineering:** ETL, Data Pipelines, Data Cleaning, Data Preprocessing
-- **Cloud Platforms:** Streamlit (for deployment)
-- **Data Visualization:** Matplotlib, Seaborn
-- **Database Management:** MySQL
-- **Tools:** Jupyter, Git, Pandas, Scikit-learn, TensorFlow, Keras, Streamlit
+Data isn’t just numbers. It’s patterns, behaviours, risks, opportunities and signals waiting to be decoded.
 
-#### **Soft Skills:**
-- Strong Analytical and Problem-Solving Skills
-- Effective Communication and Presentation
-- Team Collaboration and Leadership
-- Independent Judgment and Professional Reporting
-- Project Management
-- Accuracy and Attention to Detail
-- Organizational and Analytical Skills
+First I meet the characters, which are the variables and values. Then I follow the clues, clean the evidence, connect the dots, and uncover the plot. The ending is never just a statistic. It is a clear recommendation, a story stakeholders can act on, and a solution that works beyond the lab.
+
+My process blends industry intuition from hands-on work in insurance operations and customer analytics with academic depth from my current Master’s studies, all supported by a commitment to practical innovation.
 
 ---
 
-### 📈 Current Project
+## 🛠 My Technical Toolkit
 
-**Project Title:** Analyzing Gen Z's Role in the 2024 Finance Bill Protests in Kenya
+I speak **Python** fluently and use it daily for analysis, automation, and building models. When statistical precision is key, I turn to **R**. **SQL** is my trusted partner for navigating complex relational databases, and **JavaScript** comes into play when I bridge data with interactive interfaces.
 
-**Overview:** This project investigates the role of Gen Z in the recent protests against the Finance Bill 2024 in Kenya. It aims to understand the economic and social factors driving their involvement by analyzing data from various sources, including demographic statistics, economic indicators, and survey responses.
+For machine learning, I rely on **Scikit-learn** for dependable classical models and **TensorFlow** with **Keras** for deep learning. **Pandas** and **NumPy** form the backbone of my data wrangling, while natural language processing toolkits help me transform raw text into meaningful insight.
 
-**Key Insights:**
-- Significant rise in youth unemployment since 2016.
-- Gen Z experiences the highest unemployment rates.
-- Economic pressures and declining employment ratios likely fuel Gen Z's activism.
+When it comes to visual storytelling, I use **Tableau** for polished boardroom-ready dashboards and **Power BI** for connected, scalable reporting. **Matplotlib** and **Seaborn** allow me to explore patterns visually, and **Streamlit** helps me share models in interactive and user-friendly applications.
 
-**Objectives:**
-- Uncover trends in youth employment and unemployment from 1991 to 2023.
-- Inform policymakers and stakeholders about the underlying issues facing this generation.
-- Support the development of more responsive and inclusive policies.
-
-**Visualizations:**
-- ![Visualization](empz.png) <!-- Ensure the path to the image is correct -->
+On the data engineering side, I design **ETL pipelines**to take raw, messy data and transform it into clean, structured assets. I integrate data sources using **APIs** and maintain version control on **GitHub** to ensure reproducibility and smooth collaboration.
 
 ---
 
-Thank you for visiting my GitHub profile! Feel free to reach out if you have any questions or collaboration opportunities.
+## 🔄 My Problem-Solving Flow
+
+
+```
+Understand → Prepare → Explore → Model → Evaluate → Communicate → Improve
+```
+
+I don’t believe in “magic models”,  I believe in **purpose-driven pipelines** that:
+
+* Start with the *right* question
+* Respect the data’s reality (cleaning counts!)
+* Translate results into decisions people can act on
+* Keep evolving as the problem changes
+
+---
+
+## 💡 My Philosophy
+
+- **Purpose First** – Know *why* before *how* . Purpose always comes first.
+- **Story Over Stats** - Insights only matter if they can be understood and acted upon.
+- **Iterate Relentlessly** – Good models become great through feedback
+- **Ethical AI** - Ethics and responsibility are just as important as accuracy in artificial intelligence. That means accuracy is nothing without responsibility
+- **Collaboration Wins** - Collaboration turns good ideas into great ones.
+
+---
+
+## 🤝 Let’s Connect
+
+If you care about data that has a purpose, we are already speaking the same language.
+
+💼 [Connect on LinkedIn](https://www.linkedin.com/in/valerie-jerono)
+📧 [Email Me](mailto:kipropvalerie@gmail.com)
+🌍 Based in Nairobi, Kenya and collaborating globally
+
+---
+
+*"Numbers tell the truth. I make sure they tell it well."* 
 
