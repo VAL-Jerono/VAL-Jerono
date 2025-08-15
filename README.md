@@ -4,6 +4,8 @@
 **Data Scientist  | Data Storyteller | Risk and Behavior Analyst | AI and Insight Enthusiast**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge\&logo=linkedin\&logoColor=white)](https://www.linkedin.com/in/valerie-jerono)
+
+
 [![Email](https://img.shields.io/badge/Gmail-Say%20Hello-D14836?style=for-the-badge\&logo=gmail\&logoColor=white)](mailto:kipropvalerie@gmail.com)
 
 ---
@@ -73,7 +75,9 @@ I don’t believe in “magic models”,  I believe in **purpose-driven pipeline
 If you care about data that has a purpose, we are already speaking the same language.
 
 💼 [Connect on LinkedIn](https://www.linkedin.com/in/valerie-jerono)
+
 📧 [Email Me](mailto:kipropvalerie@gmail.com)
+
 🌍 Based in Nairobi, Kenya and collaborating globally
 
 ---
