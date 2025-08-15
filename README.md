@@ -10,7 +10,7 @@
 
 ---
 
-## 🌍 The Short Version
+## 🌍 Kwa ufupi
 
 I help numbers make sense and stories make an impact.
 
