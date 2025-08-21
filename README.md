@@ -12,7 +12,7 @@
 
 [![Location](https://img.shields.io/badge/Nairobi-Kenya-green?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=green)]()
 
-![Profile Views](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge&color=40E0D0)
+![Profile Views](https://komarev.com/ghpvc/?username=VAL-Jerono&style=for-the-badge&color=40E0D0)
 
 </div>
 
