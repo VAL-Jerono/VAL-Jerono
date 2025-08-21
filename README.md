@@ -7,10 +7,12 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5)](https://www.linkedin.com/in/valerie-jerono)
+
 [![Email](https://img.shields.io/badge/Gmail-Say%20Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836)](mailto:kipropvalerie@gmail.com)
+
 [![Location](https://img.shields.io/badge/Nairobi-Kenya-green?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=green)]()
 
-![Profile Views](https://komarev.com/ghpvc/?username=valerie-jerono&style=for-the-badge&color=40E0D0)
+![Profile Views](https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge&color=40E0D0)
 
 </div>
 
@@ -133,6 +135,8 @@ My process blends **industry intuition** from hands-on work in insurance operati
 🎯 Understand → 🛠 Prepare → 🔍 Explore → 🤖 Model → ✅ Evaluate → 📢 Communicate → 🚀 Improve
 ```
 
+<img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="500">
+
 </div>
 
 I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipelines** that:
@@ -214,7 +218,13 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=valerie-jerono&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact" width="48%">
+<img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%">
+
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=VAL-Jerono&theme=tokyonight&hide_border=true&background=0D1117" width="48%">
+
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact" width="48%">
 
 </div>
 
@@ -230,11 +240,11 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 
 <br>
 
-💼 **[Connect on LinkedIn](https://www.linkedin.com/in/valerie-jerono)** | 
+💼 **[Connect on LinkedIn](https://www.linkedin.com/in/valerie-jerono)** |
 
-📧 **[Email Me](mailto:kipropvalerie@gmail.com)** | 
-
-🌍 **Based in Nairobi, Kenya and collaborating globally**
+ 📧 **[Email Me](mailto:kipropvalerie@gmail.com)** |
+ 
+  🌍 **Based in Nairobi, Kenya and collaborating globally**
 
 </div>
 
