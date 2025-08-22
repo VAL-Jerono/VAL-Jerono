@@ -49,6 +49,7 @@ My roots are in **actuarial science** where I mastered the precision of numbers,
 
 If you arrived expecting just another developer profile, you may want to pour yourself a coffee ☕ and stay a little longer. I see data not simply as numbers in a spreadsheet, but as a **living map of behaviours, risks, opportunities, and stories** that have not yet been told.
 
+
 ---
 
 ## 🧠 How I Approach Data
