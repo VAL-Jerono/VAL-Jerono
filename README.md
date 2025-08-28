@@ -215,7 +215,7 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 
 ---
 
-## 🌟 GitHub Stats:
+## 🌟 GitHub Stats
 
 <div align="center">
 
