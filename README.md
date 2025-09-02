@@ -126,6 +126,7 @@ My process blends **industry intuition** from hands-on work in insurance operati
 
 </div>
 
+
 ---
 
 ## 🔄 My Problem-Solving Flow
@@ -173,6 +174,7 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 </tr>
 </table>
 
+
 ---
 
 ## 💡 My Philosophy
@@ -213,6 +215,7 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 </tr>
 </table>
 
+
 ---
 
 ## 🌟 GitHub Stats
@@ -226,6 +229,7 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact" width="48%">
 
 </div>
+
 
 ---
 
@@ -246,6 +250,7 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
   🌍 **Based in Nairobi, Kenya and collaborating globally**
 
 </div>
+
 
 ---
 
