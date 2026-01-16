@@ -219,44 +219,80 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 ## 📊 GitHub Analytics
 
 <div align="center">
-  
+
+### 💻 Coding Metrics
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VAL-Jerono&theme=radical" width="99%" alt="Profile Summary">
+
+</div>
+
+<div align="center">
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&border_radius=8">
-  <img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=vue&hide_border=true&border_radius=8" width="49%" alt="GitHub Stats">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&border_radius=10&include_all_commits=true&count_private=true">
+  <img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=vue&hide_border=true&border_radius=10&include_all_commits=true&count_private=true" width="49%" alt="GitHub Stats">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=radical&hide_border=true&background=0d1117&stroke=58a6ff&ring=1f6feb&fire=f85149&currStreakLabel=c9d1d9&sideLabels=58a6ff&currStreakNum=c9d1d9&dates=8b949e&border_radius=8">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=vue&hide_border=true&border_radius=8" width="49%" alt="GitHub Streak">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=radical&hide_border=true&background=0d1117&stroke=58a6ff&ring=1f6feb&fire=f85149&currStreakLabel=c9d1d9&sideLabels=58a6ff&currStreakNum=c9d1d9&dates=8b949e&border_radius=10">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=vue&hide_border=true&border_radius=10" width="49%" alt="GitHub Streak">
 </picture>
 
 </div>
 
 <div align="center">
-  
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&layout=compact&border_radius=8&langs_count=8">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=vue&hide_border=true&layout=compact&border_radius=8&langs_count=8" width="55%" alt="Top Languages">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&layout=donut-vertical&border_radius=10&langs_count=8">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=vue&hide_border=true&layout=donut-vertical&border_radius=10&langs_count=8" width="38%" alt="Top Languages">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=github-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=f85149&area=true&radius=8">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=vue&hide_border=true&area=true&radius=8" width="99%" alt="Contribution Graph">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=VAL-Jerono&theme=radical&utcOffset=3">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=VAL-Jerono&theme=vue&utcOffset=3" width="30%" alt="Productive Time">
 </picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VAL-Jerono&theme=radical">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VAL-Jerono&theme=vue" width="30%" alt="Most Commit Language">
+</picture>
+
+</div>
+
+<div align="center">
+
+### 📈 Contribution Activity
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=github-dark-dimmed&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=f85149&area=true&radius=10&custom_title=Contribution%20Graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=vue&hide_border=true&area=true&radius=10&custom_title=Contribution%20Graph" width="99%" alt="Contribution Graph">
+</picture>
+
+</div>
+
+<div align="center">
+
+### 🏆 Achievements
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10">
+  <img src="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=flat&no-frame=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies">
+</picture>
+
+</div>
+
+<div align="center">
+
+### 🎯 Profile Insights
+
+<img src="https://komarev.com/ghpvc/?username=VAL-Jerono&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views">
 
 </div>
 
 ---
 
 <div align="center">
-  
-### 🏆 GitHub Trophies
-  
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15">
-  <img src="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=flat&no-frame=true&no-bg=false&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies">
-</picture>
-
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&fontSize=0" width="100%">
 </div>
 
 
