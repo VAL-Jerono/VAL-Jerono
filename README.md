@@ -216,14 +216,16 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 
 ---
 
-## 🌟 GitHub Stats
+## 🌟 **GitHub Stats**
 
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%">
 
 
+
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=VAL-Jerono&theme=tokyonight&hide_border=true&background=0D1117" width="48%">
+
 
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact" width="48%">
