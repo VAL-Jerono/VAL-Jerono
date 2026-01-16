@@ -216,19 +216,46 @@ I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipeli
 
 ---
 
-## 🌟 **GitHub Stats**
+## 📊 GitHub Analytics
 
 <div align="center">
+  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&border_radius=8">
+  <img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=vue&hide_border=true&border_radius=8" width="49%" alt="GitHub Stats">
+</picture>
 
-<img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117" width="48%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=radical&hide_border=true&background=0d1117&stroke=58a6ff&ring=1f6feb&fire=f85149&currStreakLabel=c9d1d9&sideLabels=58a6ff&currStreakNum=c9d1d9&dates=8b949e&border_radius=8">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=vue&hide_border=true&border_radius=8" width="49%" alt="GitHub Streak">
+</picture>
 
+</div>
 
+<div align="center">
+  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&layout=compact&border_radius=8&langs_count=8">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=vue&hide_border=true&layout=compact&border_radius=8&langs_count=8" width="55%" alt="Top Languages">
+</picture>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=VAL-Jerono&theme=tokyonight&hide_border=true&background=0D1117" width="48%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=github-dark&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=f85149&area=true&radius=8">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=vue&hide_border=true&area=true&radius=8" width="99%" alt="Contribution Graph">
+</picture>
 
+</div>
 
+---
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact" width="48%">
+<div align="center">
+  
+### 🏆 GitHub Trophies
+  
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=radical&no-frame=true&no-bg=true&column=4&margin-w=15&margin-h=15">
+  <img src="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=flat&no-frame=true&no-bg=false&column=4&margin-w=15&margin-h=15" alt="GitHub Trophies">
+</picture>
 
 </div>
 
