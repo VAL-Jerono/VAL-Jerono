@@ -3,602 +3,469 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valerie Jerono</title>
-<meta name="description" content="ML Engineer. Actuarial Analyst. AI Researcher. Founder of Vondetta. Nairobi, Kenya.">
+<title>Valerie Jerono — ML Engineer & Actuarial Analyst</title>
+<meta name="description" content="ML Engineer. Actuarial Analyst. AI Researcher in InsurTech, Risk & Behaviour. Founder of Vondetta. Nairobi, Kenya.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --black:    #060606;
-  --black-2:  #0c0c0c;
-  --black-3:  #141414;
-  --pink:     #f72585;
-  --pink-dim: rgba(247,37,133,0.08);
-  --pink-glow:rgba(247,37,133,0.18);
-  --white:    #f5f0ee;
-  --muted:    #4a4a4a;
-  --serif:    'Cormorant', Georgia, serif;
-  --sans:     'Syne', system-ui, sans-serif;
+  --pink: #F72585;
+  --pink-deep: #C81D6E;
+  --sage: #4F6B5E;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+/* ── LIGHT THEME (default) ── */
+:root, [data-theme="light"] {
+  --bg:        #FAF8F4;
+  --bg-2:      #F1ECE3;
+  --ink:       #14120F;
+  --ink-soft:  #564F47;
+  --line:      #DCD3C4;
+  --card-bg:   #FAF8F4;
+  --dark-block:#181018;
+  --dark-block-text: #F5F0EF;
+  --dark-block-soft: rgba(245,240,239,0.66);
+  --dark-block-line: rgba(245,240,239,0.14);
+}
+
+/* ── DARK THEME ── */
+[data-theme="dark"] {
+  --bg:        #0D0C10;
+  --bg-2:      #161419;
+  --ink:       #F5F2EE;
+  --ink-soft:  #B7B0C2;
+  --line:      #2C2832;
+  --card-bg:   #161419;
+  --dark-block:#000000;
+  --dark-block-text: #F5F2EE;
+  --dark-block-soft: rgba(245,242,238,0.62);
+  --dark-block-line: rgba(245,242,238,0.12);
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--black);
-  color: var(--white);
+  background: var(--bg);
+  color: var(--ink);
   font-family: var(--sans);
   -webkit-font-smoothing: antialiased;
-  cursor: none;
   overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* CUSTOM CURSOR */
-.cursor {
-  position: fixed;
-  width: 8px; height: 8px;
-  background: var(--pink);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
-  mix-blend-mode: screen;
-}
-.cursor-ring {
-  position: fixed;
-  width: 36px; height: 36px;
-  border: 1px solid rgba(247,37,133,0.4);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: transform 0.12s ease, width 0.25s ease, height 0.25s ease, opacity 0.25s ease;
-}
-body:hover .cursor { opacity: 1; }
-a:hover ~ .cursor, button:hover ~ .cursor { width: 14px; height: 14px; }
+a { color: inherit; }
+::selection { background: var(--pink); color: #fff; }
 
-/* NOISE OVERLAY */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 1000;
-  opacity: 0.6;
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
 
-/* NAV */
+/* ───────── NAV ───────── */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 500;
   display: flex; align-items: center; justify-content: space-between;
-  padding: 1.75rem 3rem;
-  mix-blend-mode: normal;
+  padding: 1.5rem 3rem;
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
 }
 .nav-name {
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--white);
-  opacity: 0;
-  animation: fadeUp 0.8s ease 1.2s forwards;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--ink);
 }
+.nav-name span { color: var(--pink); }
 .nav-links {
-  display: flex; gap: 2.5rem; list-style: none;
-  opacity: 0;
-  animation: fadeUp 0.8s ease 1.4s forwards;
+  display: flex; align-items: center; gap: 2.1rem; list-style: none;
 }
 .nav-links a {
-  font-size: 0.72rem;
+  font-size: 0.82rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
+  color: var(--ink-soft);
   text-decoration: none;
   transition: color 0.2s;
-  position: relative;
 }
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -3px; left: 0;
-  width: 0; height: 1px;
-  background: var(--pink);
-  transition: width 0.25s ease;
+.nav-links a:hover { color: var(--pink); }
+.nav-cta {
+  border: 1px solid var(--ink);
+  padding: 0.5rem 1.1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.nav-links a:hover { color: var(--white); }
-.nav-links a:hover::after { width: 100%; }
+.nav-cta:hover { background: var(--pink); color: #fff; border-color: var(--pink); }
 
-/* HERO */
+.theme-toggle {
+  display: flex; align-items: center; gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--ink-soft);
+  transition: border-color 0.2s, color 0.2s;
+}
+.theme-toggle:hover { border-color: var(--pink); color: var(--pink); }
+.theme-toggle .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--pink);
+  transition: transform 0.25s ease;
+}
+[data-theme="dark"] .theme-toggle .dot { transform: translateX(2px); }
+
+/* ───────── HERO ───────── */
 .hero {
   min-height: 100vh;
-  display: flex; align-items: flex-end;
-  padding: 0 3rem 5rem;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 7rem 3rem 4rem;
   position: relative;
   overflow: hidden;
 }
-
-/* background radial bloom */
-.hero::after {
-  content: '';
+.hero-canvas {
   position: absolute;
-  top: -20%; right: -10%;
-  width: 65vw; height: 65vw;
-  background: radial-gradient(ellipse, rgba(247,37,133,0.07) 0%, transparent 68%);
+  top: 0; right: 0;
+  width: 56vw; height: 100%;
+  pointer-events: none;
+  opacity: 0.92;
+}
+[data-theme="light"] .hero-canvas { mix-blend-mode: multiply; }
+[data-theme="dark"] .hero-canvas { mix-blend-mode: screen; }
+.hero-grid-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(to right, var(--line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.4;
+  mask-image: radial-gradient(ellipse 60% 55% at 72% 35%, black, transparent);
   pointer-events: none;
 }
-
-.hero-year {
-  position: absolute;
-  top: 50%; right: 3rem;
-  transform: translateY(-50%) rotate(90deg);
-  transform-origin: center center;
-  font-family: var(--sans);
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
-  color: var(--muted);
-  opacity: 0;
-  animation: fadeIn 1s ease 2s forwards;
+.bg-mesh {
+  position: fixed; inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    radial-gradient(ellipse 38% 30% at 18% 12%, color-mix(in srgb, var(--pink) 13%, transparent), transparent 70%),
+    radial-gradient(ellipse 32% 26% at 88% 75%, color-mix(in srgb, var(--sage) 14%, transparent), transparent 70%);
+  animation: meshDrift 26s ease-in-out infinite alternate;
 }
-
-.hero-content { position: relative; z-index: 2; max-width: 900px; }
-
-.hero-tag {
-  display: inline-block;
-  font-size: 0.68rem;
+@keyframes meshDrift {
+  0%   { transform: translate(0,0) scale(1); }
+  50%  { transform: translate(-2%, 2%) scale(1.04); }
+  100% { transform: translate(2%, -2%) scale(1.02); }
+}
+.hero-eyebrow {
+  position: relative;
+  display: flex; align-items: center; gap: 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--pink);
-  margin-bottom: 1.75rem;
+  color: var(--sage);
+  margin-bottom: 2rem;
   opacity: 0;
-  animation: fadeUp 0.7s ease 0.3s forwards;
+  animation: fadeUp 0.7s ease 0.1s forwards;
 }
-
-.hero-name {
-  font-family: var(--serif);
-  font-size: clamp(5rem, 12vw, 11rem);
-  font-weight: 300;
-  line-height: 0.9;
-  color: var(--white);
-  margin-bottom: 0.15em;
-  opacity: 0;
-  animation: fadeUp 0.9s ease 0.5s forwards;
-}
-
-.hero-name em {
-  font-style: italic;
-  color: var(--pink);
-  display: block;
-}
-
-.hero-descriptor {
-  font-family: var(--serif);
-  font-size: clamp(1.1rem, 2.2vw, 1.6rem);
-  font-weight: 300;
-  color: var(--muted);
-  line-height: 1.5;
-  margin-top: 2rem;
-  max-width: 520px;
-  opacity: 0;
-  animation: fadeUp 0.8s ease 0.85s forwards;
-}
-
-.hero-descriptor strong {
-  color: var(--white);
-  font-weight: 400;
-}
-
-.hero-scroll {
-  position: absolute;
-  bottom: 3rem; left: 50%;
-  transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-  opacity: 0;
-  animation: fadeIn 1s ease 2.2s forwards;
-}
-.scroll-line {
-  width: 1px; height: 48px;
-  background: linear-gradient(to bottom, transparent, var(--pink));
-  animation: scrollPulse 2s ease-in-out infinite;
-}
-.scroll-label {
-  font-size: 0.6rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-@keyframes scrollPulse {
-  0%, 100% { opacity: 0.3; transform: scaleY(1); }
-  50% { opacity: 1; transform: scaleY(1.15); }
-}
-
-/* DIVIDER */
-.section-divider {
-  display: flex; align-items: center; gap: 1.5rem;
-  padding: 0 3rem;
-  margin-bottom: 5rem;
-}
-.divider-line {
-  flex: 1; height: 0.5px;
-  background: linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent);
-}
-.divider-dot {
-  width: 4px; height: 4px;
+[data-theme="dark"] .hero-eyebrow { color: #8FB3A1; }
+.hero-eyebrow .dot {
+  width: 7px; height: 7px;
   background: var(--pink);
   border-radius: 50%;
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--pink) 16%, transparent);
 }
-
-/* SECTIONS */
-.section {
-  padding: 6rem 3rem;
+.hero-name {
   position: relative;
-}
-
-.section-num {
-  font-size: 0.62rem;
-  letter-spacing: 0.2em;
-  color: var(--pink);
-  text-transform: uppercase;
-  margin-bottom: 3rem;
-  display: flex; align-items: center; gap: 1rem;
-}
-.section-num::after {
-  content: '';
-  display: block;
-  width: 40px; height: 0.5px;
-  background: var(--pink);
-  opacity: 0.4;
-}
-
-/* ABOUT */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: start;
-}
-
-.about-statement {
   font-family: var(--serif);
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 300;
-  line-height: 1.25;
-  color: var(--white);
-}
-.about-statement em {
-  font-style: italic;
-  color: var(--pink);
-}
-
-.about-body {
-  display: flex; flex-direction: column; gap: 1.25rem;
-}
-.about-body p {
-  font-size: 0.95rem;
-  color: var(--muted);
-  line-height: 1.85;
+  font-size: clamp(2.7rem, 7vw, 6.1rem);
   font-weight: 400;
-}
-.about-body p strong {
-  color: var(--white);
-  font-weight: 500;
-}
-
-/* WORK — horizontal scroll cards */
-.work-wrap {
-  padding: 6rem 0 6rem 3rem;
-  overflow: hidden;
-}
-.work-header {
-  padding-right: 3rem;
-  margin-bottom: 3rem;
-}
-.work-scroll {
-  display: flex; gap: 1.5rem;
-  overflow-x: auto;
-  padding-right: 3rem;
-  padding-bottom: 1rem;
-  scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-  cursor: grab;
-}
-.work-scroll::-webkit-scrollbar { display: none; }
-.work-scroll:active { cursor: grabbing; }
-
-.work-card {
-  flex-shrink: 0;
-  width: 340px;
-  background: var(--black-2);
-  border: 0.5px solid rgba(255,255,255,0.06);
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
-  transition: border-color 0.25s, transform 0.25s;
-}
-.work-card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 2px;
-  background: linear-gradient(to right, var(--pink), transparent);
+  line-height: 0.98;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  max-width: 17ch;
   opacity: 0;
-  transition: opacity 0.3s;
+  animation: fadeUp 0.8s ease 0.25s forwards;
 }
-.work-card:hover { border-color: rgba(247,37,133,0.2); transform: translateY(-4px); }
-.work-card:hover::before { opacity: 1; }
-
-.card-period {
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  color: var(--pink);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-.card-title {
-  font-family: var(--serif);
-  font-size: 1.4rem;
+.hero-name em {
+  font-style: italic;
   font-weight: 400;
-  color: var(--white);
-  line-height: 1.25;
-  margin-bottom: 0.75rem;
+  color: var(--pink);
 }
-.card-desc {
+.hero-row {
+  position: relative;
+  display: flex; flex-wrap: wrap;
+  align-items: flex-end; justify-content: space-between;
+  gap: 2.5rem;
+  margin-top: 2.75rem;
+}
+.hero-descriptor {
+  font-size: clamp(1rem, 1.6vw, 1.16rem);
+  color: var(--ink-soft);
+  line-height: 1.6;
+  max-width: 480px;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.4s forwards;
+}
+.hero-descriptor strong { color: var(--ink); font-weight: 600; }
+.hero-roles {
+  font-family: var(--mono);
   font-size: 0.82rem;
-  color: var(--muted);
-  line-height: 1.7;
-  margin-bottom: 1.25rem;
-}
-.card-tags {
-  display: flex; flex-wrap: wrap; gap: 0.4rem;
-}
-.card-tag {
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
-  color: var(--muted);
-  border: 0.5px solid rgba(255,255,255,0.1);
-  padding: 0.2rem 0.55rem;
-}
-.card-stat {
-  position: absolute;
-  bottom: 1.5rem; right: 1.5rem;
-  font-family: var(--serif);
-  font-size: 2.5rem;
-  font-weight: 300;
-  color: rgba(247,37,133,0.12);
-  line-height: 1;
-  pointer-events: none;
-}
-
-/* SKILLS */
-.skills-section {
-  background: var(--black-2);
-  border-top: 0.5px solid rgba(255,255,255,0.05);
-  border-bottom: 0.5px solid rgba(255,255,255,0.05);
-}
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  border: 0.5px solid rgba(255,255,255,0.05);
-}
-.skill-block {
-  padding: 2.5rem 2rem;
-  border-right: 0.5px solid rgba(255,255,255,0.05);
-  border-bottom: 0.5px solid rgba(255,255,255,0.05);
-  transition: background 0.2s;
-}
-.skill-block:hover { background: rgba(247,37,133,0.03); }
-.skill-block:nth-child(3n) { border-right: none; }
-.skill-block:nth-last-child(-n+3) { border-bottom: none; }
-
-.skill-icon {
-  font-family: var(--serif);
-  font-size: 2rem;
-  font-style: italic;
-  color: var(--pink);
-  opacity: 0.5;
-  display: block;
-  margin-bottom: 1rem;
-  line-height: 1;
-}
-.skill-name {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 0.5rem;
-}
-.skill-list {
-  font-size: 0.78rem;
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-/* WRITING */
-.writing-list {
-  display: flex; flex-direction: column; gap: 0;
-  border: 0.5px solid rgba(255,255,255,0.06);
-}
-.writing-item {
-  display: flex; align-items: baseline;
-  justify-content: space-between;
-  padding: 1.5rem 2rem;
-  border-bottom: 0.5px solid rgba(255,255,255,0.06);
-  text-decoration: none;
-  transition: background 0.2s, padding-left 0.25s;
-  gap: 2rem;
-}
-.writing-item:last-child { border-bottom: none; }
-.writing-item:hover {
-  background: var(--pink-dim);
-  padding-left: 2.5rem;
-}
-.writing-title {
-  font-family: var(--serif);
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--white);
-  flex: 1;
-}
-.writing-arrow {
-  color: var(--pink);
-  font-size: 1rem;
-  flex-shrink: 0;
+  color: var(--ink-soft);
+  line-height: 1.9;
+  text-align: right;
   opacity: 0;
-  transition: opacity 0.2s, transform 0.2s;
+  animation: fadeUp 0.8s ease 0.55s forwards;
 }
-.writing-item:hover .writing-arrow { opacity: 1; transform: translateX(4px); }
+.hero-roles b { color: var(--ink); font-weight: 600; }
+.hero-roles .pinkb { color: var(--pink); }
 
-/* CONTACT */
-.contact-inner {
+/* ───────── STAT STRIP ───────── */
+.stat-strip {
+  position: relative;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--dark-block);
+}
+.stat-strip-inner { display: grid; grid-template-columns: repeat(5, 1fr); }
+.stat {
+  padding: 2.4rem 1.75rem;
+  border-right: 1px solid var(--dark-block-line);
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.stat:last-child { border-right: none; }
+.stat.visible { opacity: 1; transform: translateY(0); }
+.stat-value {
+  font-family: var(--mono);
+  font-size: clamp(1.45rem, 2.3vw, 2.05rem);
+  font-weight: 600;
+  color: var(--dark-block-text);
+  line-height: 1;
+  margin-bottom: 0.6rem;
+}
+.stat-value .accent { color: var(--pink); }
+.stat-label { font-size: 0.74rem; color: var(--dark-block-soft); line-height: 1.45; }
+
+/* ───────── SECTIONS ───────── */
+.section { padding: 6.5rem 3rem; position: relative; }
+.section-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 3.25rem; }
+.section-eyebrow { font-family: var(--mono); font-size: 0.76rem; color: var(--sage); text-transform: uppercase; letter-spacing: 0.06em; }
+[data-theme="dark"] .section-eyebrow { color: #8FB3A1; }
+.section-title { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.6rem); font-weight: 400; color: var(--ink); }
+.section-title em { font-style: italic; color: var(--pink); }
+.section-rule { flex: 1; height: 1px; background: var(--line); margin-left: 0.5rem; }
+
+/* ───────── ABOUT ───────── */
+.about { background: var(--bg-2); border-bottom: 1px solid var(--line); }
+.about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 4.5rem; align-items: start; }
+.about-statement { font-family: var(--serif); font-size: clamp(1.6rem, 2.5vw, 2.25rem); font-weight: 400; line-height: 1.32; color: var(--ink); }
+.about-statement em { font-style: italic; color: var(--pink); }
+.about-body { display: flex; flex-direction: column; gap: 1.4rem; }
+.about-body p { font-size: 0.98rem; color: var(--ink-soft); line-height: 1.8; }
+.about-body p strong { color: var(--ink); font-weight: 600; }
+.about-creds { margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.65rem; border-top: 1px solid var(--line); padding-top: 1.4rem; }
+.cred-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.86rem; flex-wrap: wrap; }
+.cred-label { color: var(--ink-soft); }
+.cred-val { font-family: var(--mono); color: var(--ink); font-weight: 500; text-align: right; }
+
+/* niche pills, from SWOT positioning */
+.niche-pills { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 0.5rem; }
+.niche-pill {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--pink-deep);
+  background: color-mix(in srgb, var(--pink) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--pink) 28%, transparent);
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+}
+[data-theme="dark"] .niche-pill { color: #FF6FAE; }
+
+/* ───────── WORK ───────── */
+.work-filter {
+  display: flex; flex-wrap: wrap; gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+.filter-btn {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  background: none;
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.filter-btn:hover { border-color: var(--pink); color: var(--pink); }
+.filter-btn.active { background: var(--pink); border-color: var(--pink); color: #fff; }
+
+.work-list { display: flex; flex-direction: column; }
+.work-item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: start;
+  grid-template-columns: 110px 1.4fr 1fr;
+  gap: 2.5rem;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid var(--line);
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.3s ease;
 }
-.contact-big {
-  font-family: var(--serif);
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  font-weight: 300;
-  line-height: 1.05;
-  color: var(--white);
+.work-item.visible { opacity: 1; transform: translateY(0); }
+.work-item:first-child { padding-top: 0; }
+.work-item.hidden-cat { display: none; }
+.work-period { font-family: var(--mono); font-size: 0.78rem; color: var(--sage); padding-top: 0.3rem; }
+[data-theme="dark"] .work-period { color: #8FB3A1; }
+.work-main { display: flex; flex-direction: column; gap: 0.75rem; }
+.work-title-row { display: flex; align-items: baseline; gap: 0.9rem; flex-wrap: wrap; }
+.work-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; color: var(--ink); }
+.work-role {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--pink-deep);
+  background: color-mix(in srgb, var(--pink) 10%, transparent);
+  padding: 0.18rem 0.5rem;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
-.contact-big em { font-style: italic; color: var(--pink); }
+[data-theme="dark"] .work-role { color: #FF6FAE; }
+.work-desc { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.72; max-width: 60ch; }
+.work-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.1rem; }
+.work-tag { font-family: var(--mono); font-size: 0.68rem; color: var(--ink-soft); border: 1px solid var(--line); padding: 0.2rem 0.55rem; border-radius: 2px; }
+.work-metric { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; border-left: 1px solid var(--line); padding-left: 2rem; }
+.work-metric-value { font-family: var(--mono); font-size: 1.9rem; font-weight: 600; color: var(--ink); line-height: 1; }
+.work-metric-value .unit { font-size: 1.05rem; color: var(--pink); }
+.work-metric-label { font-size: 0.73rem; color: var(--ink-soft); margin-top: 0.5rem; max-width: 16ch; }
 
-.contact-links {
-  display: flex; flex-direction: column; gap: 1.25rem;
-  margin-top: 3rem;
+/* ───────── CRAFT ───────── */
+.craft { background: var(--dark-block); }
+.craft .section-eyebrow { color: #8FB3A1; }
+.craft .section-title { color: var(--dark-block-text); }
+.craft .section-rule { background: var(--dark-block-line); }
+.skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--dark-block-line); border: 1px solid var(--dark-block-line); }
+.skill-block {
+  background: var(--dark-block);
+  padding: 2.1rem 1.9rem;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.55s ease, transform 0.55s ease, background 0.2s;
 }
-.contact-link {
-  display: flex; align-items: center; gap: 1rem;
+.skill-block.visible { opacity: 1; transform: translateY(0); }
+.skill-block:hover { background: color-mix(in srgb, var(--pink) 6%, var(--dark-block)); }
+.skill-name { font-family: var(--mono); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pink); margin-bottom: 0.8rem; }
+.skill-list { font-size: 0.85rem; color: var(--dark-block-soft); line-height: 1.85; }
+
+/* ───────── WRITING ───────── */
+.writing-list { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
+.writing-item {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: 2rem; padding: 1.55rem 0;
+  border-bottom: 1px solid var(--line);
   text-decoration: none;
-  transition: transform 0.2s;
+  transition: padding-left 0.25s, color 0.2s;
 }
-.contact-link:hover { transform: translateX(6px); }
-.cl-label {
-  font-size: 0.62rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--pink);
-  min-width: 60px;
-}
-.cl-val {
-  font-size: 0.88rem;
-  color: var(--muted);
-  transition: color 0.2s;
-  font-weight: 400;
-}
-.contact-link:hover .cl-val { color: var(--white); }
+.writing-item:hover { padding-left: 0.9rem; color: var(--pink-deep); }
+[data-theme="dark"] .writing-item:hover { color: #FF6FAE; }
+.writing-num { font-family: var(--mono); font-size: 0.78rem; color: var(--sage); min-width: 2.2rem; }
+[data-theme="dark"] .writing-num { color: #8FB3A1; }
+.writing-title { font-family: var(--serif); font-size: 1.16rem; font-weight: 400; color: var(--ink); flex: 1; }
+.writing-item:hover .writing-title { color: var(--pink-deep); }
+[data-theme="dark"] .writing-item:hover .writing-title { color: #FF6FAE; }
+.writing-arrow { font-family: var(--mono); color: var(--pink); font-size: 0.95rem; opacity: 0; transition: opacity 0.2s, transform 0.2s; }
+.writing-item:hover .writing-arrow { opacity: 1; transform: translateX(3px); }
 
-.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+/* ───────── TRAJECTORY (SWOT-informed honesty section) ───────── */
+.trajectory { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.trajectory-text { font-size: 1rem; color: var(--ink-soft); line-height: 1.85; max-width: 78ch; }
+.trajectory-text strong { color: var(--ink); font-weight: 600; }
+.trajectory-text em { font-style: italic; color: var(--pink); }
+.path-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 2rem; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); }
+.path-step { padding: 0.35rem 0.75rem; border: 1px solid var(--line); border-radius: 20px; }
+.path-arrow { color: var(--pink); }
 
-.cf-field {
-  display: flex; flex-direction: column; gap: 0.3rem;
-}
-.cf-label {
-  font-size: 0.62rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
+/* ───────── CONTACT ───────── */
+.contact { background: var(--bg); }
+.contact-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: start; }
+.contact-big { font-family: var(--serif); font-size: clamp(2.3rem, 4.4vw, 3.5rem); font-weight: 400; line-height: 1.12; color: var(--ink); }
+.contact-big em { font-style: italic; color: var(--pink); }
+.contact-sub { margin-top: 1.25rem; font-size: 0.98rem; color: var(--ink-soft); line-height: 1.7; max-width: 42ch; }
+.contact-links { display: flex; flex-direction: column; gap: 1rem; margin-top: 2.5rem; }
+.contact-link { display: flex; align-items: center; justify-content: space-between; text-decoration: none; padding: 0.85rem 0; border-bottom: 1px solid var(--line); transition: padding-left 0.2s, color 0.2s; }
+.contact-link:hover { padding-left: 0.5rem; color: var(--pink-deep); }
+[data-theme="dark"] .contact-link:hover { color: #FF6FAE; }
+.cl-label { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); }
+.cl-val { font-size: 0.92rem; font-weight: 500; color: var(--ink); }
+.contact-link:hover .cl-val { color: var(--pink-deep); }
+[data-theme="dark"] .contact-link:hover .cl-val { color: #FF6FAE; }
+
+.contact-form { display: flex; flex-direction: column; gap: 1.1rem; }
+.cf-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.cf-label { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
 .cf-input, .cf-textarea {
-  background: var(--black-3);
-  border: 0.5px solid rgba(255,255,255,0.08);
-  border-bottom: 0.5px solid rgba(255,255,255,0.15);
-  color: var(--white);
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  color: var(--ink);
   font-family: var(--sans);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   padding: 0.85rem 1rem;
   outline: none;
-  transition: border-color 0.2s;
+  border-radius: 2px;
   resize: none;
-  border-radius: 0;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
-.cf-input:focus, .cf-textarea:focus {
-  border-color: var(--pink);
-  background: rgba(247,37,133,0.03);
-}
+.cf-input:focus, .cf-textarea:focus { border-color: var(--pink); box-shadow: 0 0 0 3px color-mix(in srgb, var(--pink) 16%, transparent); }
 .cf-btn {
-  background: transparent;
-  border: 0.5px solid var(--pink);
-  color: var(--pink);
+  background: var(--pink);
+  border: 1px solid var(--pink);
+  color: #fff;
   font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  padding: 1rem 2rem;
-  cursor: none;
-  transition: background 0.2s, color 0.2s;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.95rem 1.6rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
   align-self: flex-start;
 }
-.cf-btn:hover { background: var(--pink); color: var(--black); }
+.cf-btn:hover { background: var(--pink-deep); border-color: var(--pink-deep); }
+.cf-btn:focus-visible, a:focus-visible, .nav-cta:focus-visible, .theme-toggle:focus-visible, .filter-btn:focus-visible { outline: 2px solid var(--pink); outline-offset: 2px; }
 
-/* FOOTER */
-footer {
-  padding: 2rem 3rem;
-  border-top: 0.5px solid rgba(255,255,255,0.05);
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 1rem;
-}
-.footer-left {
-  font-family: var(--serif);
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--muted);
-}
-.footer-right {
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
+/* ───────── FOOTER ───────── */
+footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+.footer-left { font-family: var(--serif); font-size: 0.9rem; font-style: italic; color: var(--ink-soft); }
+.footer-right { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft); }
 
-/* ANIMATIONS */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav { padding: 1.25rem; }
-  .nav-links { display: none; }
-  .hero { padding: 0 1.25rem 4rem; }
-  .hero-year { display: none; }
+@media (max-width: 880px) {
+  nav { padding: 1.1rem 1.25rem; }
+  .nav-links { gap: 1rem; }
+  .nav-links li:not(:last-child):not(:nth-last-child(2)) { display: none; }
+  .hero { padding: 6.5rem 1.25rem 3rem; }
+  .hero-row { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .hero-roles { text-align: left; }
+  .stat-strip-inner { grid-template-columns: repeat(2, 1fr); }
+  .stat:nth-child(2n) { border-right: none; }
+  .stat { border-bottom: 1px solid var(--dark-block-line); }
   .section { padding: 4rem 1.25rem; }
-  .section-divider { padding: 0 1.25rem; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .work-wrap { padding: 4rem 0 4rem 1.25rem; }
-  .work-header { padding-right: 1.25rem; }
-  .work-card { width: 280px; }
+  .work-item { grid-template-columns: 1fr; gap: 1rem; }
+  .work-metric { border-left: none; align-items: flex-start; text-align: left; padding-left: 0; flex-direction: row; gap: 0.8rem; align-items: baseline; }
   .skills-grid { grid-template-columns: 1fr; }
-  .skill-block { border-right: none; }
   .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
   footer { padding: 1.5rem 1.25rem; flex-direction: column; align-items: flex-start; }
 }
@@ -606,259 +473,332 @@ footer {
 </head>
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+<div class="bg-mesh"></div>
 
 <nav>
-  <div class="nav-name">Valerie Jerono</div>
+  <div class="nav-name">Valerie Jerono<span>.</span></div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
+    <li><a href="#craft">Craft</a></li>
     <li><a href="#writing">Writing</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><span class="dot"></span><span id="themeLabel">Dark</span></button></li>
+    <li><a href="#contact" class="nav-cta">Get in touch</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-year">Nairobi &bull; 2025</div>
-
-  <div class="hero-content">
-    <span class="hero-tag">ML Engineer &nbsp;&bull;&nbsp; Actuarial Analyst &nbsp;&bull;&nbsp; Founder</span>
-    <h1 class="hero-name">
-      Valerie<em>Jerono.</em>
-    </h1>
+  <canvas class="hero-canvas" id="modelCanvas"></canvas>
+  <div class="hero-grid-bg"></div>
+  <span class="hero-eyebrow"><span class="dot"></span>Nairobi, Kenya &mdash; Available for select engagements</span>
+  <h1 class="hero-name">Models you can <em>defend</em> in a boardroom.</h1>
+  <div class="hero-row">
     <p class="hero-descriptor">
-      I build <strong>intelligent systems</strong> for institutions that
-      cannot afford for AI to fail. Nairobi-based.
-      <strong>Africa-rooted.</strong>
+      I build machine learning systems for institutions where a wrong prediction has a cost: insurers, health systems, and governments. <strong>Actuarial training. Production ML. No black boxes.</strong>
     </p>
-  </div>
-
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    <span class="scroll-label">Scroll</span>
+    <div class="hero-roles">
+      <div><b>ML Engineer</b></div>
+      <div><b>Actuarial Analyst</b></div>
+      <div>AI Researcher, <span class="pinkb">InsurTech &amp; Risk</span></div>
+      <div><b>Founder</b>, Vondetta</div>
+    </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<div class="section-divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+<!-- STAT STRIP -->
+<div class="stat-strip">
+  <div class="stat-strip-inner" id="statStrip">
+    <div class="stat">
+      <div class="stat-value">105,<span class="accent">555</span></div>
+      <div class="stat-label">insurance policies modeled across deployed platforms</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">92<span class="accent">%</span></div>
+      <div class="stat-label">peak ROC&#8209;AUC on production churn and claims models</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">21,<span class="accent">347</span></div>
+      <div class="stat-label">households in the housing vulnerability survey behind my MSc dissertation</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">2.<span class="accent">27</span></div>
+      <div class="stat-label">Sharpe ratio, WorldQuant BRAIN alpha strategy</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">89<span class="accent">%</span></div>
+      <div class="stat-label">alignment with expert underwriter judgment</div>
+    </div>
+  </div>
+</div>
 
-<section class="section" id="about">
-  <div class="section-num">01 &nbsp; About</div>
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="section-head">
+    <span class="section-eyebrow">About</span>
+    <div class="section-rule"></div>
+  </div>
   <div class="about-grid">
-    <div class="about-statement reveal">
-      I fix broken systems with data, curiosity, and a <em>quiet stubbornness</em> that has never learned when to stop.
+    <div>
+      <div class="about-statement">
+        I trained to <em>price risk</em> before I learned to model it. That order matters.
+      </div>
+      <div class="niche-pills">
+        <span class="niche-pill">Explainable AI</span>
+        <span class="niche-pill">Risk &amp; InsurTech</span>
+        <span class="niche-pill">Human Behaviour</span>
+        <span class="niche-pill">Policy Analytics</span>
+      </div>
     </div>
     <div class="about-body">
-      <p class="reveal reveal-delay-1">
-        I am an <strong>actuarial analyst and ML engineer</strong> who began studying how to measure uncertainty and ended up building systems that act on it. My work sits at the intersection of behaviour, risk, and machine intelligence.
-      </p>
-      <p class="reveal reveal-delay-2">
-        By day, I research intelligent systems at <strong>iLabAfrica, Strathmore University</strong> and lead engagements at <strong>Vondetta</strong>, the AI decision systems firm I founded. By night I write, tinker, break things on purpose, and occasionally rebuild them better.
-      </p>
-      <p class="reveal reveal-delay-3">
-        I also believe deeply in <strong>African creativity</strong>. In young thinkers across this continent building with courage. In the idea that the most sophisticated AI in the world should be solving the most real problems in the world, and many of those problems are right here.
-      </p>
+      <p>Most machine learning engineers come to risk modeling from the model outward: pick an algorithm, fit it to the data, ship it. I came the other direction. My foundation is <strong>actuarial science</strong>, the discipline of pricing uncertainty so precisely that a two percent error becomes a broken promise. Every model I build still answers to that standard.</p>
+      <p>I currently research intelligent systems as a <strong>Research Scholar at iLabAfrica, Strathmore University</strong>, where my MSc work develops a financial vulnerability index from Kenya's national housing survey, and I lead client engagements through <strong>Vondetta</strong>, the AI decision systems firm I founded for insurers, health systems, and government institutions across East Africa.</p>
+      <p>I do not build models that need a translator. If a client cannot see why a system made a decision, I have not finished the job.</p>
+      <div class="about-creds">
+        <div class="cred-row"><span class="cred-label">Education</span><span class="cred-val">MSc Data Science, Strathmore &middot; BSc Actuarial Science, Daystar</span></div>
+        <div class="cred-row"><span class="cred-label">Based in</span><span class="cred-val">Nairobi, Kenya</span></div>
+        <div class="cred-row"><span class="cred-label">Recognition</span><span class="cred-val">Harvard HSIL Hackathon, Honorable Mention</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- WORK -->
-<div class="section-divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-
-<div class="work-wrap" id="work">
-  <div class="work-header">
-    <div class="section-num reveal">02 &nbsp; Selected Work</div>
+<section class="section" id="work">
+  <div class="section-head">
+    <span class="section-eyebrow">Selected Work</span>
+    <div class="section-rule"></div>
   </div>
-  <div class="work-scroll" id="workScroll">
+  <div class="work-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="insurance">Insurance &amp; Risk</button>
+    <button class="filter-btn" data-filter="quant">Quant &amp; Finance</button>
+    <button class="filter-btn" data-filter="policy">Policy &amp; Health</button>
+  </div>
+  <div class="work-list" id="workList">
 
-    <div class="work-card reveal">
-      <div class="card-period">2025 &mdash; Present</div>
-      <div class="card-title">Vondetta</div>
-      <p class="card-desc">AI decision systems firm for risk-bearing institutions in East Africa. Production ML, actuarial intelligence, fraud detection, and clinical AI.</p>
-      <div class="card-tags">
-        <span class="card-tag">Founder</span>
-        <span class="card-tag">ML Systems</span>
-        <span class="card-tag">InsurTech</span>
+    <div class="work-item" data-cat="insurance">
+      <div class="work-period">2025&ndash;Present</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">Vondetta</span><span class="work-role">Founder</span></div>
+        <p class="work-desc">AI decision systems firm building production ML for risk-bearing institutions across East Africa: underwriting intelligence, fraud detection, churn modeling, and clinical triage.</p>
+        <div class="work-tags"><span class="work-tag">Strategy</span><span class="work-tag">Production ML</span><span class="work-tag">InsurTech</span></div>
       </div>
-      <div class="card-stat">V</div>
+      <div class="work-metric"><div class="work-metric-value">4<span class="unit">+</span></div><div class="work-metric-label">platforms shipped to production</div></div>
     </div>
 
-    <div class="work-card reveal reveal-delay-1">
-      <div class="card-period">2025 &mdash; Kigali</div>
-      <div class="card-title">HARAKA</div>
-      <p class="card-desc">AI triage assistant for Community Health Workers built on WHO IMCI protocols. Multilingual: English, Kiswahili, Kinyarwanda. Harvard HSIL Honorable Mention.</p>
-      <div class="card-tags">
-        <span class="card-tag">Claude AI</span>
-        <span class="card-tag">USSD</span>
-        <span class="card-tag">Health Tech</span>
+    <div class="work-item" data-cat="insurance">
+      <div class="work-period">2025&ndash;2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">Karbima Care</span><span class="work-role">Lead Engineer</span></div>
+        <p class="work-desc">AI-driven auto insurance brokerage with 4 production ML models, a 105,000-document FAISS retrieval system, and automated OCR for logbooks and IDs at intake. Quote time dropped 83%.</p>
+        <div class="work-tags"><span class="work-tag">FAISS</span><span class="work-tag">FastAPI</span><span class="work-tag">OCR</span></div>
       </div>
-      <div class="card-stat">H</div>
+      <div class="work-metric"><div class="work-metric-value">83<span class="unit">%</span></div><div class="work-metric-label">faster quote turnaround</div></div>
     </div>
 
-    <div class="work-card reveal reveal-delay-2">
-      <div class="card-period">2025 &mdash; 2026</div>
-      <div class="card-title">Bima-Insight</div>
-      <p class="card-desc">Insurance analytics platform on 105,555 policies. Churn model at 89% AUC-ROC. Identified a 2.5x ROI differential between acquisition channels.</p>
-      <div class="card-tags">
-        <span class="card-tag">XGBoost</span>
-        <span class="card-tag">RAG</span>
-        <span class="card-tag">FAISS</span>
+    <div class="work-item" data-cat="insurance">
+      <div class="work-period">2025&ndash;2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">UnderwriteGPT</span><span class="work-role">Lead Engineer</span></div>
+        <p class="work-desc">Explainable underwriting engine trained on 58,592 historical policies, returning decisions in 152ms with semantic search over policy precedent. Built for African insurance agencies.</p>
+        <div class="work-tags"><span class="work-tag">Sentence-BERT</span><span class="work-tag">Explainable AI</span></div>
       </div>
-      <div class="card-stat">B</div>
+      <div class="work-metric"><div class="work-metric-value">152<span class="unit">ms</span></div><div class="work-metric-label">decision latency</div></div>
     </div>
 
-    <div class="work-card reveal reveal-delay-3">
-      <div class="card-period">Jan &mdash; Mar 2026</div>
-      <div class="card-title">Maji Safi</div>
-      <p class="card-desc">Predicting South African river chemistry from Landsat satellite imagery. 6,400+ location-month pairs processed via Snowflake and Microsoft Planetary Computer.</p>
-      <div class="card-tags">
-        <span class="card-tag">Snowflake</span>
-        <span class="card-tag">Geospatial</span>
-        <span class="card-tag">EY Challenge</span>
+    <div class="work-item" data-cat="insurance">
+      <div class="work-period">2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">Insurance Customer Analytics Platform</span><span class="work-role">Lead Engineer</span></div>
+        <p class="work-desc">Five-layer ML platform across a &euro;25.8M, 53,502-policy portfolio. Surfaced a &euro;483/customer CLV gap between agent and broker channels nobody had quantified before.</p>
+        <div class="work-tags"><span class="work-tag">XGBoost</span><span class="work-tag">MLflow</span><span class="work-tag">Docker</span></div>
       </div>
-      <div class="card-stat">M</div>
+      <div class="work-metric"><div class="work-metric-value">92<span class="unit">%</span></div><div class="work-metric-label">ROC&#8209;AUC, claims frequency</div></div>
     </div>
 
-    <div class="work-card reveal">
-      <div class="card-period">2025 &mdash; 2026</div>
-      <div class="card-title">UnderwriteGPT</div>
-      <p class="card-desc">AI underwriting on 58,592 historical policies. FAISS semantic search. 152ms decisions. 89% consistency with expert underwriters. Built for African insurance agencies.</p>
-      <div class="card-tags">
-        <span class="card-tag">FAISS</span>
-        <span class="card-tag">NLP</span>
-        <span class="card-tag">Africa</span>
+    <div class="work-item" data-cat="quant">
+      <div class="work-period">2025&ndash;2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">WorldQuant BRAIN Alpha Research</span><span class="work-role">Quant Research</span></div>
+        <p class="work-desc">Systematic equity alpha strategies for US markets. The X2 architecture, a size-neutralized blend of earnings yield and short-term reversion, held up under controlled parameter testing.</p>
+        <div class="work-tags"><span class="work-tag">Factor Modeling</span><span class="work-tag">Risk-Adjusted Returns</span></div>
       </div>
-      <div class="card-stat">U</div>
+      <div class="work-metric"><div class="work-metric-value">2.<span class="unit">27</span></div><div class="work-metric-label">Sharpe ratio achieved</div></div>
     </div>
 
-    <div class="work-card reveal reveal-delay-1">
-      <div class="card-period">Ongoing</div>
-      <div class="card-title">County Revenue Dashboard</div>
-      <p class="card-desc">Vue.js and Laravel budget monitoring system for a Kenyan county government. Real-time revenue tracking across departments, sections, and collection points.</p>
-      <div class="card-tags">
-        <span class="card-tag">Vue.js</span>
-        <span class="card-tag">Laravel</span>
-        <span class="card-tag">GovTech</span>
+    <div class="work-item" data-cat="quant">
+      <div class="work-period">2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">GARCH Volatility Forecasting</span><span class="work-role">Research</span></div>
+        <p class="work-desc">Econometric analysis of 1,082 daily Bitcoin ETF returns. GARCH(1,1) selected via AIC/BIC; found Bitcoin shows no leverage effect, unlike equities, with real pricing implications.</p>
+        <div class="work-tags"><span class="work-tag">arch</span><span class="work-tag">statsmodels</span><span class="work-tag">MLE</span></div>
       </div>
-      <div class="card-stat">C</div>
+      <div class="work-metric"><div class="work-metric-value">6.<span class="unit">9d</span></div><div class="work-metric-label">volatility shock half-life</div></div>
+    </div>
+
+    <div class="work-item" data-cat="quant">
+      <div class="work-period">2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">AIG Marine Liability Pricing</span><span class="work-role">Actuarial Sim</span></div>
+        <p class="work-desc">Full actuarial pricing platform for a simulated marine liability portfolio, computing pure premium, large loss loading, and credibility-weighted final premium for Oceanic Shipping Co.</p>
+        <div class="work-tags"><span class="work-tag">Credibility Theory</span><span class="work-tag">React</span></div>
+      </div>
+      <div class="work-metric"><div class="work-metric-value">$13<span class="unit">M</span></div><div class="work-metric-label">final premium computed</div></div>
+    </div>
+
+    <div class="work-item" data-cat="policy">
+      <div class="work-period">2025&ndash;Present</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">Housing Financial Vulnerability Score</span><span class="work-role">MSc Dissertation</span></div>
+        <p class="work-desc">Composite vulnerability index across five risk dimensions, built from Kenya's 2023/24 Housing Survey covering 47 counties. SHAP analysis found land ownership as the strongest predictor.</p>
+        <div class="work-tags"><span class="work-tag">XGBoost</span><span class="work-tag">SHAP</span><span class="work-tag">GeoPandas</span></div>
+      </div>
+      <div class="work-metric"><div class="work-metric-value">47</div><div class="work-metric-label">Kenyan counties mapped</div></div>
+    </div>
+
+    <div class="work-item" data-cat="policy">
+      <div class="work-period">2025, Kigali</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">HARAKA</span><span class="work-role">Team Lead</span></div>
+        <p class="work-desc">AI triage assistant for Community Health Workers on WHO IMCI protocols, delivered in English, Kiswahili, and Kinyarwanda over USSD. Honorable Mention, Harvard HSIL Hackathon.</p>
+        <div class="work-tags"><span class="work-tag">USSD</span><span class="work-tag">Health Tech</span><span class="work-tag">Multilingual</span></div>
+      </div>
+      <div class="work-metric"><div class="work-metric-value">3</div><div class="work-metric-label">languages at launch</div></div>
+    </div>
+
+    <div class="work-item" data-cat="policy">
+      <div class="work-period">Jan&ndash;Mar 2026</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">Maji Safi River Intelligence</span><span class="work-role">EY Challenge</span></div>
+        <p class="work-desc">Predicted river water quality from Landsat satellite imagery, processing over 6,400 location-month pairs through Snowflake and Microsoft's Planetary Computer.</p>
+        <div class="work-tags"><span class="work-tag">Snowflake</span><span class="work-tag">Geospatial</span></div>
+      </div>
+      <div class="work-metric"><div class="work-metric-value">6.<span class="unit">4K+</span></div><div class="work-metric-label">location-month pairs</div></div>
+    </div>
+
+    <div class="work-item" data-cat="policy">
+      <div class="work-period">Ongoing</div>
+      <div class="work-main">
+        <div class="work-title-row"><span class="work-title">County Revenue Dashboard</span><span class="work-role">GovTech</span></div>
+        <p class="work-desc">Real-time budget monitoring system for a Kenyan county government, tracking revenue across departments, sections, and collection points on a Vue.js and Laravel stack.</p>
+        <div class="work-tags"><span class="work-tag">Vue.js</span><span class="work-tag">Laravel</span></div>
+      </div>
+      <div class="work-metric"><div class="work-metric-value">1</div><div class="work-metric-label">county government live</div></div>
     </div>
 
   </div>
-</div>
+</section>
 
-<!-- SKILLS -->
-<div class="section-divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-
-<section class="section skills-section">
-  <div class="section-num reveal">03 &nbsp; Craft</div>
-  <div class="skills-grid">
-    <div class="skill-block reveal">
-      <span class="skill-icon">Ml</span>
-      <div class="skill-name">Machine Learning</div>
-      <div class="skill-list">XGBoost &bull; Random Forest &bull; ExtraTrees &bull; LightGBM &bull; GARCH &bull; Time Series &bull; SMOTE &bull; Spatial CV</div>
+<!-- CRAFT -->
+<section class="section craft" id="craft">
+  <div class="section-head">
+    <span class="section-eyebrow">Craft</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="skills-grid" id="skillsGrid">
+    <div class="skill-block">
+      <div class="skill-name">Machine Learning &amp; Stats</div>
+      <div class="skill-list">XGBoost &middot; Random Forest &middot; LightGBM &middot; GARCH &middot; OLS/MLE &middot; SMOTE &middot; Spatial CV</div>
     </div>
-    <div class="skill-block reveal reveal-delay-1">
-      <span class="skill-icon">Ai</span>
+    <div class="skill-block">
       <div class="skill-name">AI Systems</div>
-      <div class="skill-list">RAG Pipelines &bull; FAISS &bull; LLM Integration &bull; Claude AI &bull; NLP &bull; Knowledge Graphs &bull; Embeddings</div>
+      <div class="skill-list">RAG Pipelines &middot; FAISS &middot; LLM Integration &middot; NLP &middot; Knowledge Graphs &middot; Embeddings</div>
     </div>
-    <div class="skill-block reveal reveal-delay-2">
-      <span class="skill-icon">Ac</span>
+    <div class="skill-block">
       <div class="skill-name">Actuarial Science</div>
-      <div class="skill-list">Risk Modeling &bull; Premium Calculation &bull; Claims Analysis &bull; IBNR &bull; Churn Analytics &bull; CLV &bull; Fraud Detection</div>
+      <div class="skill-list">Risk Modeling &middot; Premium Calculation &middot; Credibility Theory &middot; IBNR &middot; CLV &middot; Fraud Detection</div>
     </div>
-    <div class="skill-block reveal">
-      <span class="skill-icon">En</span>
+    <div class="skill-block">
       <div class="skill-name">Engineering</div>
-      <div class="skill-list">Python &bull; PHP &bull; Laravel &bull; Vue.js &bull; React &bull; FastAPI &bull; Django &bull; MySQL &bull; Snowflake &bull; Redis</div>
+      <div class="skill-list">Python &middot; PHP &middot; Laravel &middot; Vue.js &middot; React &middot; FastAPI &middot; Django &middot; MySQL &middot; Snowflake</div>
     </div>
-    <div class="skill-block reveal reveal-delay-1">
-      <span class="skill-icon">Da</span>
-      <div class="skill-name">Data</div>
-      <div class="skill-list">Pandas &bull; Scikit-learn &bull; ApexCharts &bull; Power BI &bull; Streamlit &bull; Geospatial &bull; Satellite Imagery</div>
+    <div class="skill-block">
+      <div class="skill-name">Data &amp; Visualization</div>
+      <div class="skill-list">Pandas &middot; Scikit&#8209;learn &middot; Power BI &middot; Streamlit &middot; GeoPandas &middot; Satellite Imagery</div>
     </div>
-    <div class="skill-block reveal reveal-delay-2">
-      <span class="skill-icon">De</span>
+    <div class="skill-block">
       <div class="skill-name">Deployment</div>
-      <div class="skill-list">Vercel &bull; Render &bull; Supabase &bull; Docker &bull; Git &bull; API Design &bull; Production ML &bull; Monitoring</div>
+      <div class="skill-list">Vercel &middot; Render &middot; Supabase &middot; Docker &middot; MLflow &middot; Git &middot; Monitoring</div>
     </div>
   </div>
 </section>
 
 <!-- WRITING -->
-<div class="section-divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
-
 <section class="section" id="writing">
-  <div class="section-num reveal">04 &nbsp; Writing</div>
-  <div class="writing-list reveal">
+  <div class="section-head">
+    <span class="section-eyebrow">Writing</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="writing-list">
     <a class="writing-item" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
-      <span class="writing-title">Tried to read river chemistry from outer space. Here's what happened.</span>
+      <span class="writing-num">01</span>
+      <span class="writing-title">Tried to read river chemistry from outer space. Here is what happened.</span>
       <span class="writing-arrow">&#8594;</span>
     </a>
     <a class="writing-item" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
-      <span class="writing-title">HARAKA: Building AI triage for community health workers in East Africa</span>
+      <span class="writing-num">02</span>
+      <span class="writing-title">HARAKA: building AI triage for community health workers in East Africa</span>
       <span class="writing-arrow">&#8594;</span>
     </a>
     <a class="writing-item" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
+      <span class="writing-num">03</span>
       <span class="writing-title">Why African insurance companies are building AI on the wrong foundation</span>
       <span class="writing-arrow">&#8594;</span>
     </a>
     <a class="writing-item" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
+      <span class="writing-num">04</span>
       <span class="writing-title">The quiet actuarial risk hiding inside your ML model</span>
       <span class="writing-arrow">&#8594;</span>
     </a>
     <a class="writing-item" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
-      <span class="writing-title">All writing on Medium &rarr; medium.com/@Vondetta</span>
+      <span class="writing-num">&#8594;</span>
+      <span class="writing-title">All writing on Medium &mdash; medium.com/@Vondetta</span>
       <span class="writing-arrow">&#8594;</span>
     </a>
   </div>
 </section>
 
-<!-- CONTACT -->
-<div class="section-divider"><div class="divider-line"></div><div class="divider-dot"></div><div class="divider-line"></div></div>
+<!-- TRAJECTORY -->
+<section class="section trajectory">
+  <div class="section-head">
+    <span class="section-eyebrow">Where This Is Going</span>
+    <div class="section-rule"></div>
+  </div>
+  <p class="trajectory-text">
+    I am candid about the shape of my career right now: early, fast-moving, and built on project depth rather than a decade of enterprise titles. I think that is a fair trade for someone who has gone from actuarial underwriting to claims analytics to research scholarship to founding a company in under three years. The throughline across all of it is one question asked in different rooms: <em>what does this number mean for the person who has to live with the decision it produces?</em>
+  </p>
+  <div class="path-row">
+    <span class="path-step">Actuarial Science</span><span class="path-arrow">&#8594;</span>
+    <span class="path-step">Underwriting</span><span class="path-arrow">&#8594;</span>
+    <span class="path-step">Claims Analytics</span><span class="path-arrow">&#8594;</span>
+    <span class="path-step">Research Scholarship</span><span class="path-arrow">&#8594;</span>
+    <span class="path-step">Founder, Vondetta</span>
+  </div>
+</section>
 
-<section class="section" id="contact">
-  <div class="section-num reveal">05 &nbsp; Contact</div>
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="section-head">
+    <span class="section-eyebrow">Contact</span>
+    <div class="section-rule"></div>
+  </div>
   <div class="contact-inner">
     <div>
-      <h2 class="contact-big reveal">
-        Let's build something <em>real.</em>
-      </h2>
+      <h2 class="contact-big">Tell me what you are <em>trying to decide.</em></h2>
+      <p class="contact-sub">If you are an insurer, a health system, or a government office trying to make a high-stakes decision with imperfect data, that is the work I want to hear about.</p>
       <div class="contact-links">
-        <a class="contact-link" href="https://linkedin.com/in/valerie-jerono" target="_blank" rel="noopener">
-          <span class="cl-label">LinkedIn</span>
-          <span class="cl-val">Valerie Jerono</span>
-        </a>
-        <a class="contact-link" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
-          <span class="cl-label">Medium</span>
-          <span class="cl-val">@Vondetta</span>
-        </a>
-        <a class="contact-link" href="https://github.com/VAL-Jerono" target="_blank" rel="noopener">
-          <span class="cl-label">GitHub</span>
-          <span class="cl-val">VAL-Jerono</span>
-        </a>
-        <a class="contact-link" href="mailto:hello@vondetta.io">
-          <span class="cl-label">Email</span>
-          <span class="cl-val">hello@vondetta.io</span>
-        </a>
+        <a class="contact-link" href="https://linkedin.com/in/valerie-jerono" target="_blank" rel="noopener"><span class="cl-label">LinkedIn</span><span class="cl-val">Valerie Jerono</span></a>
+        <a class="contact-link" href="https://medium.com/@Vondetta" target="_blank" rel="noopener"><span class="cl-label">Medium</span><span class="cl-val">@Vondetta</span></a>
+        <a class="contact-link" href="https://github.com/VAL-Jerono" target="_blank" rel="noopener"><span class="cl-label">GitHub</span><span class="cl-val">VAL-Jerono</span></a>
+        <a class="contact-link" href="mailto:hello@vondetta.io"><span class="cl-label">Email</span><span class="cl-val">hello@vondetta.io</span></a>
       </div>
     </div>
 
-    <form class="contact-form reveal" onsubmit="handleSubmit(event)">
-      <div class="cf-field">
-        <label class="cf-label">Name</label>
-        <input class="cf-input" type="text" placeholder="Your name" required>
-      </div>
-      <div class="cf-field">
-        <label class="cf-label">Email</label>
-        <input class="cf-input" type="email" placeholder="your@email.com" required>
-      </div>
-      <div class="cf-field">
-        <label class="cf-label">Message</label>
-        <textarea class="cf-textarea" rows="4" placeholder="What are you working on?" required></textarea>
-      </div>
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="cf-field"><label class="cf-label" for="cf-name">Name</label><input class="cf-input" id="cf-name" type="text" placeholder="Your name" required></div>
+      <div class="cf-field"><label class="cf-label" for="cf-email">Email</label><input class="cf-input" id="cf-email" type="email" placeholder="your@email.com" required></div>
+      <div class="cf-field"><label class="cf-label" for="cf-msg">What are you working on?</label><textarea class="cf-textarea" id="cf-msg" rows="4" placeholder="A sentence or two is plenty." required></textarea></div>
       <button class="cf-btn" type="submit" id="submitBtn">Send message</button>
     </form>
   </div>
@@ -866,61 +806,232 @@ footer {
 
 <footer>
   <span class="footer-left">Valerie Jerono &mdash; Nairobi, Kenya</span>
-  <span class="footer-right">&copy; 2025 &nbsp;&bull;&nbsp; Founder, Vondetta</span>
+  <span class="footer-right">&copy; 2026 &middot; Founder, Vondetta</span>
 </footer>
 
 <script>
-  /* Cursor */
-  const cursor = document.getElementById('cursor');
-  const ring = document.getElementById('cursorRing');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-  function animCursor() {
-    cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
-    rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
-    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-    requestAnimationFrame(animCursor);
-  }
-  animCursor();
+  // Theme toggle, persists for the session
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const label = document.getElementById('themeLabel');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  let theme = prefersDark ? 'dark' : 'light';
+  root.setAttribute('data-theme', theme);
+  label.textContent = theme === 'dark' ? 'Light' : 'Dark';
 
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.width = '14px'; cursor.style.height = '14px';
-      ring.style.width = '52px'; ring.style.height = '52px';
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.width = '8px'; cursor.style.height = '8px';
-      ring.style.width = '36px'; ring.style.height = '36px';
-    });
+  toggle.addEventListener('click', () => {
+    theme = theme === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', theme);
+    label.textContent = theme === 'dark' ? 'Light' : 'Dark';
   });
 
-  /* Scroll reveal */
-  const observer = new IntersectionObserver(entries => {
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  }, { threshold: 0.15 });
 
-  /* Drag scroll for work cards */
-  const ws = document.getElementById('workScroll');
-  let isDown = false, startX, scrollLeft;
-  ws.addEventListener('mousedown', e => { isDown = true; startX = e.pageX - ws.offsetLeft; scrollLeft = ws.scrollLeft; });
-  ws.addEventListener('mouseleave', () => isDown = false);
-  ws.addEventListener('mouseup', () => isDown = false);
-  ws.addEventListener('mousemove', e => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - ws.offsetLeft;
-    ws.scrollLeft = scrollLeft - (x - startX) * 1.4;
+  document.querySelectorAll('.stat').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.07) + 's';
+    revealObserver.observe(el);
+  });
+  document.querySelectorAll('.work-item').forEach((el, i) => {
+    el.style.transitionDelay = (Math.min(i, 3) * 0.05) + 's';
+    revealObserver.observe(el);
+  });
+  document.querySelectorAll('.skill-block').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.05) + 's';
+    revealObserver.observe(el);
   });
 
-  /* Form */
+  // Work filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const workItems = document.querySelectorAll('.work-item');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      workItems.forEach(item => {
+        if (f === 'all' || item.dataset.cat === f) {
+          item.classList.remove('hidden-cat');
+        } else {
+          item.classList.add('hidden-cat');
+        }
+      });
+    });
+  });
+
   function handleSubmit(e) {
     e.preventDefault();
     const btn = document.getElementById('submitBtn');
     btn.textContent = 'Sent.';
-    btn.style.background = 'var(--pink)';
-    btn.style.color = 'var(--black)';
     btn.disabled = true;
+  }
+</script>
+<script>
+  // ───────── Live "decision boundary" hero visual ─────────
+  // A scatter of risk/no-risk points with a drifting nonlinear boundary,
+  // and a slow stream of new points being classified in real time.
+  (function () {
+    const canvas = document.getElementById('modelCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let W, H, DPR;
+    let reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function resize() {
+      DPR = Math.min(window.devicePixelRatio || 1, 2);
+      W = canvas.clientWidth; H = canvas.clientHeight;
+      canvas.width = W * DPR; canvas.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+
+    // Decision boundary: a smooth wavy curve, y = f(x), drifting over time
+    function boundaryY(x, t) {
+      const nx = x / W;
+      return H * 0.52
+        + Math.sin(nx * 3.1 + t * 0.00018) * H * 0.085
+        + Math.sin(nx * 6.4 - t * 0.00026) * H * 0.035
+        + (nx - 0.5) * H * 0.22;
+    }
+
+    // Static background points: classified, gently drifting
+    const N = 46;
+    const points = [];
+    for (let i = 0; i < N; i++) {
+      const x = Math.random() * W;
+      const baseY = Math.random() * H;
+      points.push({
+        x, y: baseY,
+        vx: (Math.random() - 0.5) * 0.06,
+        vy: (Math.random() - 0.5) * 0.06,
+        r: 2 + Math.random() * 2.2,
+        phase: Math.random() * Math.PI * 2
+      });
+    }
+
+    // Active "inference" particles: travel toward boundary, then snap-classify
+    const probes = [];
+    function spawnProbe() {
+      const x = Math.random() * W;
+      probes.push({
+        x, y: -10,
+        targetY: null,
+        speed: 0.55 + Math.random() * 0.45,
+        state: 'falling',
+        settleAt: 0,
+        r: 3.4
+      });
+    }
+    let lastSpawn = 0;
+
+    function colors() {
+      const dark = isDark();
+      return {
+        line: dark ? 'rgba(245,242,238,0.16)' : 'rgba(20,18,15,0.10)',
+        lineStrong: dark ? 'rgba(245,242,238,0.30)' : 'rgba(20,18,15,0.20)',
+        ptA: dark ? 'rgba(143,179,161,0.85)' : 'rgba(79,107,94,0.7)',
+        ptB: '#F72585',
+        ptBGlow: 'rgba(247,37,133,0.35)'
+      };
+    }
+
+    let t0 = performance.now();
+    function frame(now) {
+      const dt = now - t0; t0 = now;
+      const t = now;
+      ctx.clearRect(0, 0, W, H);
+      const c = colors();
+
+      // boundary curve
+      ctx.beginPath();
+      for (let x = 0; x <= W; x += 8) {
+        const y = boundaryY(x, t);
+        if (x === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = c.lineStrong;
+      ctx.lineWidth = 1.1;
+      ctx.setLineDash([2, 5]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // background classified points, gentle float, colored by side of boundary
+      points.forEach(p => {
+        if (!reduceMotion) {
+          p.x += p.vx; p.y += p.vy + Math.sin(t * 0.0006 + p.phase) * 0.03;
+          if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
+        }
+        const by = boundaryY(p.x, t);
+        const below = p.y > by;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = below ? c.ptB : c.ptA;
+        ctx.globalAlpha = below ? 0.55 : 0.5;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      });
+
+      // active inference probes falling and classifying
+      if (!reduceMotion) {
+        if (t - lastSpawn > 1450 && probes.length < 5) { spawnProbe(); lastSpawn = t; }
+        for (let i = probes.length - 1; i >= 0; i--) {
+          const pr = probes[i];
+          if (pr.state === 'falling') {
+            pr.y += pr.speed * (dt * 0.06);
+            const by = boundaryY(pr.x, t);
+            if (pr.y >= by) { pr.y = by; pr.state = 'settled'; pr.settleAt = t; }
+          } else if (pr.state === 'settled') {
+            if (t - pr.settleAt > 1100) probes.splice(i, 1);
+          }
+        }
+      }
+      probes.forEach(pr => {
+        const settled = pr.state === 'settled';
+        const pulse = settled ? 1 + Math.sin((t - pr.settleAt) * 0.012) * 0.18 : 1;
+        ctx.beginPath();
+        ctx.arc(pr.x, pr.y, pr.r * pulse, 0, Math.PI * 2);
+        ctx.fillStyle = settled ? c.ptBGlow : c.lineStrong;
+        ctx.fill();
+        ctx.beginPath();
+        ctx.arc(pr.x, pr.y, 1.6, 0, Math.PI * 2);
+        ctx.fillStyle = settled ? c.ptB : c.lineStrong;
+        ctx.fill();
+        // falling trail
+        if (!settled) {
+          ctx.beginPath();
+          ctx.moveTo(pr.x, Math.max(0, pr.y - 22));
+          ctx.lineTo(pr.x, pr.y);
+          ctx.strokeStyle = c.line;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      });
+
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  })();
+
+  // ───────── Count-up stat numbers on reveal ─────────
+  function animateCount(el, target, suffix, decimals) {
+    const dur = 1400;
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min(1, (now - start) / dur);
+      const eased = 1 - Math.pow(1 - p, 3);
+      const val = target * eased;
+      el.textContent = decimals
+        ? val.toFixed(decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+        : Math.round(val).toLocaleString();
+      if (suffix) el.textContent += suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
   }
 </script>
 </body>
