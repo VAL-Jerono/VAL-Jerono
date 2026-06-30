@@ -11,7 +11,7 @@
 
 <br>
 
-## Kwa Ufupi — In Short
+## Kwa Ufupi: In Short
 
 I started in actuarial science, where I learned to be exact: a mortality table does not forgive a careless assumption, and a premium that is wrong by two percent is a promise the company cannot keep. That precision never left me. What changed is where I point it.
 
@@ -80,15 +80,15 @@ Each of these began as a real question, not a dataset I found interesting. I hav
 
 ### Insurance & Risk
 
-**Karbima Care** — *Kenya's AI-driven auto insurance brokerage*
+**Karbima Care:** *Kenya's AI-driven auto insurance brokerage*
 Four production ML models (AUC up to 0.88) sitting on top of a 105,000-document FAISS retrieval system, with automated OCR reading logbooks, licenses, and IDs at intake. The result: quote time dropped 83%, and the projected annual ROI sits at KES 4.4M. This is the project that taught me that a RAG system is only as good as the latency a human will tolerate before giving up; under 50ms became the line I would not cross.
 `Python` `FAISS` `Sentence-Transformers` `FastAPI` `Ollama` `Tesseract OCR`
 
-**UnderwriteGPT** — *Explainable underwriting for African insurers*
+**UnderwriteGPT:** *Explainable underwriting for African insurers*
 58,592 real policy records, reduced to 41,012 structured narratives an underwriter could actually read and challenge. The risk scoring framework achieves 8.15% score separation between claim and no-claim cases, and the system reaches 89% alignment with expert underwriter decisions. Live at `underwritegpt.streamlit.app`.
 `Sentence-BERT` `FAISS` `Scikit-learn` `Streamlit` `Explainable AI`
 
-**Intelligent Insurance Customer Analytics Platform** — *Five layers, one portfolio*
+**Intelligent Insurance Customer Analytics Platform:** *Five layers, one portfolio*
 Built across a €25.8M, 53,502-policy portfolio: churn (89.26% ROC-AUC), claims frequency (92.25% ROC-AUC), a leakage-corrected severity model, and a ten-year customer lifetime value engine. The finding that mattered most was not technical, it was that agent-channel customers carried a €483 CLV advantage over broker-channel customers, a gap nobody had quantified before. Pilot deployment across 20 agents cut churn by 12.3%.
 `XGBoost` `TensorFlow` `MLflow` `Docker Compose` `Prometheus` `Grafana`
 
@@ -96,11 +96,11 @@ Built across a €25.8M, 53,502-policy portfolio: churn (89.26% ROC-AUC), claims
 
 ### Quantitative Finance
 
-**WorldQuant BRAIN Alpha Research** — *What actually drives a Sharpe ratio*
+**WorldQuant BRAIN Alpha Research:** *What actually drives a Sharpe ratio*
 I built and tested multiple systematic equity alpha strategies, eventually landing on an architecture I call X2: a size-neutralized blend of earnings yield, return on equity, and short-term reversion, reaching Sharpe ratios between 2.15 and 2.27. The more interesting result was negative: after controlled testing, I permanently flagged a popular volatility-grouping variable as unreliable, because a single anomalous date was quietly corrupting every bucket downstream. Knowing what not to trust turned out to matter as much as the strategy itself.
 `Systematic Equity Strategy` `Factor Modeling` `Risk-Adjusted Returns`
 
-**GARCH Volatility Forecasting** — *Bitcoin does not behave like equities*
+**GARCH Volatility Forecasting:** *Bitcoin does not behave like equities*
 A full econometric pipeline across 1,082 daily returns of the ProShares Bitcoin Strategy ETF. GARCH(1,1) won on AIC/BIC, with a persistence parameter of 0.9044 and a shock half-life of 6.9 trading days. The headline finding: Bitcoin shows no leverage effect, the asymmetric volatility response that defines equity markets simply is not there, which has real implications for anyone pricing crypto derivatives with equity-market intuition.
 `Python` `arch` `statsmodels` `Time Series Econometrics`
 
@@ -108,15 +108,15 @@ A full econometric pipeline across 1,082 daily returns of the ProShares Bitcoin 
 
 ### Public Policy & Human Systems
 
-**Housing Financial Vulnerability Score** — *My MSc dissertation, built to be used, not shelved*
+**Housing Financial Vulnerability Score:** *My MSc dissertation, built to be used, not shelved*
 A composite vulnerability index across five dimensions, financial stress, tenure insecurity, physical hazard, dwelling quality, and utility deprivation, built from Kenya's 2023/24 Housing Survey covering 21,347 households across all 47 counties. The construction model reaches a PR-AUC of 0.9315; the field-deployable proxy model holds up at 0.65 to 0.78 AUC on unseen data, which matters more, because a model nobody can run in the field is a model nobody will use. SHAP analysis surfaced land ownership as the single strongest predictor of vulnerability, ahead of income. Deployed as an interactive choropleth dashboard with a bilingual, Groq-powered policy advisor.
 `XGBoost` `SHAP` `Survey-Weighted Modeling` `GeoPandas` `Spatial CV`
 
-**HARAKA MED** — *Clinical triage for the community health worker, not the hospital*
+**HARAKA MED:** *Clinical triage for the community health worker, not the hospital*
 Built at the Harvard HSIL Hackathon at CMU Africa in Kigali, where it earned an Honorable Mention. A trilingual AI triage assistant, English, Kiswahili, Kinyarwanda, that follows WHO IMCI protocols and runs over USSD, meaning it works on a basic feature phone with no data connection. The hardest design constraint was not the model, it was accepting that the best AI system in the world is useless to a community health worker without signal.
 `Next.js` `Groq` `Africa's Talking USSD` `WHO IMCI Protocols`
 
-**Miraa Transportation Optimization** — *Logistics for a crop that spoils by the hour*
+**Miraa Transportation Optimization:** *Logistics for a crop that spoils by the hour*
 Applied Vogel's Approximation Method and linear programming to route miraa from Meru County to four markets, with a four-component cost model that weighs distance against road quality, vehicle type, and a perishability penalty that increases by the hour. Validated against SciPy's LP solver, landing on an optimal total cost of KES 101,700. Prototyped as MiraaMover, a React app matching producers to transporters in real time.
 `Python` `SciPy` `Linear Programming` `React`
 
@@ -158,12 +158,14 @@ Applied Vogel's Approximation Method and linear programming to route miraa from 
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&hide_border=true&bg_color=00000000&title_color=00695C&icon_color=00897B&text_color=333333&border_radius=10&count_private=true" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&hide_border=true&background=00000000&stroke=00695C&ring=00897B&fire=00695C&currStreakLabel=00695C&border_radius=10" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&hide_border=true&theme=transparent&title_color=00897B&icon_color=00897B&text_color=E8E8E8&border_radius=10&count_private=true" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&hide_border=true&theme=transparent&title_color=00897B&text_color=E8E8E8&layout=compact&border_radius=10&langs_count=8" width="49%" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&hide_border=true&bg_color=00000000&title_color=00695C&text_color=333333&layout=compact&border_radius=10&langs_count=8" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&hide_border=true&theme=transparent&stroke=00897B&ring=00897B&fire=00897B&currStreakLabel=00897B&sideLabels=E8E8E8&currStreakNum=E8E8E8&sideNums=E8E8E8&dates=AAAAAA" width="49%" />
 
 </div>
+
+> If a card above looks blank, GitHub's badge services occasionally rate-limit or sleep. Refreshing the page or waiting a moment usually fixes it; the underlying activity itself is unaffected.
 
 <br>
 
