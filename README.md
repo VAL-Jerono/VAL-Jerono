@@ -1,305 +1,186 @@
-# 🌟 Hey, I'm Valerie Jerono <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35">
-
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=40E0D0&center=true&vCenter=true&width=600&lines=Data+Scientist+%F0%9F%93%8A;Data+Storyteller+%F0%9F%93%96;Risk+%26+Behavior+Analyst+%F0%9F%A7%A0;AI+%26+Insight+Enthusiast+%F0%9F%A4%96)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00695C,100:40E0D0&height=180&section=header&text=Valerie%20Jerono&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=ML%20Engineer%20%7C%20Actuarial%20Analyst%20%7C%20AI%20Researcher%20in%20InsurTech,%20Risk%20%26%20Behaviour&descAlignY=58&descSize=16" width="100%"/>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5)](https://www.linkedin.com/in/valerie-jerono)
-[![Email](https://img.shields.io/badge/Gmail-Say%20Hello-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836)](mailto:kipropvalerie@gmail.com)
-[![Location](https://img.shields.io/badge/Nairobi-Kenya-2ecc71?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=2ecc71)]()
-![Profile Views](https://komarev.com/ghpvc/?username=VAL-Jerono&style=for-the-badge&color=40E0D0)
+<a href="https://www.linkedin.com/in/valerie-jerono"><img src="https://img.shields.io/badge/LinkedIn-Connect-00695C?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:kipropvalerie@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-00695C?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://medium.com/@Vondetta"><img src="https://img.shields.io/badge/Medium-Read%20My%20Work-00695C?style=for-the-badge&logo=medium&logoColor=white" /></a>
+<img src="https://komarev.com/ghpvc/?username=VAL-Jerono&style=for-the-badge&color=00695C&label=Profile+Views" />
 
 </div>
-
----
-
-## 🌍 Kwa Ufupi
-
-<div align="center">
-
-> ### *"I help numbers make sense and stories make an impact."*
-
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400">
-
-</div>
-
-My roots are in **actuarial science** where I mastered the precision of numbers, yet curiosity soon drew me into the broader world of data science and analytics. Now I work at the intersection of:
-
-<table align="center">
-<tr>
-<td align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="80">
-<br><b>Risk Analysis</b>
-</td>
-<td align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212284119-fbfd994d-8c2a-4a07-a75f-84e513833c1c.gif" width="80">
-<br><b>Behavior Analytics</b>
-</td>
-<td align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="80">
-<br><b>Intelligent Systems</b>
-</td>
-</tr>
-</table>
-
-If you arrived expecting just another developer profile, you may want to pour yourself a coffee ☕ and stay a little longer. 
-
-I see data not simply as numbers in a spreadsheet, but as a **living map of behaviours, risks, opportunities, and stories** that have not yet been told.
-
----
-
-## 🧠 How I Approach Data
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212750155-3ceddfbd-19d3-40a3-87af-8d329c8323c4.gif" width="400">
-</div>
-
-Data isn't just numbers. It's **patterns**, **behaviours**, **risks**, **opportunities** and **signals** waiting to be decoded.
-```mermaid
-graph LR
-    A[📊 Meet Variables] --> B[🔍 Follow Clues] 
-    B --> C[🧹 Clean Evidence]
-    C --> D[🔗 Connect Dots]
-    D --> E[📈 Uncover Plot]
-    E --> F[💡 Clear Recommendations]
-    
-    style A fill:#40E0D0,stroke:#333,stroke-width:2px,color:#000
-    style B fill:#FF6B6B,stroke:#333,stroke-width:2px,color:#000
-    style C fill:#4ECDC4,stroke:#333,stroke-width:2px,color:#000
-    style D fill:#45B7D1,stroke:#333,stroke-width:2px,color:#000
-    style E fill:#96CEB4,stroke:#333,stroke-width:2px,color:#000
-    style F fill:#FECA57,stroke:#333,stroke-width:2px,color:#000
-```
-
-My process blends **industry intuition** from hands-on work in insurance operations and customer analytics with **academic depth** from my current Master's studies, all supported by a commitment to practical innovation.
-
----
-
-## 🛠 My Technical Toolkit
-
-<div align="center">
-
-### 🐍 Programming Languages
-
-![Python](https://img.shields.io/badge/Python-Expert-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![R](https://img.shields.io/badge/R-Advanced-276DC3?style=for-the-badge&logo=r&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-Expert-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Intermediate-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### 🤖 Machine Learning & AI
-
-![Scikit-learn](https://img.shields.io/badge/Scikit_Learn-Expert-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-Advanced-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-Advanced-D00000?style=for-the-badge&logo=keras&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-Intermediate-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-
-![Pandas](https://img.shields.io/badge/Pandas-Expert-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-Expert-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-Advanced-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
-
-### 📊 Visualization & BI
-
-![Tableau](https://img.shields.io/badge/Tableau-Advanced-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-Advanced-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Expert-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-Advanced-3776AB?style=for-the-badge&logo=seaborn&logoColor=white)
-
-![Plotly](https://img.shields.io/badge/Plotly-Advanced-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-Advanced-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-
-### ⚙️ Data Engineering & Tools
-
-![Git](https://img.shields.io/badge/Git-Expert-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-Expert-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Intermediate-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Expert-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-
-![APIs](https://img.shields.io/badge/APIs-Advanced-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![ETL](https://img.shields.io/badge/ETL-Expert-4CAF50?style=for-the-badge&logo=apache-airflow&logoColor=white)
-
-</div>
-
----
-
-## 🔄 My Problem-Solving Flow
-
-<div align="center">
-```
-🎯 Understand → 🛠 Prepare → 🔍 Explore → 🤖 Model → ✅ Evaluate → 📢 Communicate → 🚀 Improve
-```
-
-<img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="500">
-
-</div>
-
-I don't believe in **"magic models"** 🪄, I believe in **purpose-driven pipelines** that:
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**🎯 Start Right**
-- Begin with the *right* question
-- Define clear objectives
-- Understand stakeholder needs
-
-**🧹 Respect Reality**  
-- Clean data thoroughly
-- Handle missing values properly
-- Validate data quality
-
-</td>
-<td width="50%" valign="top">
-
-**💬 Translate Results**
-- Make insights actionable
-- Create compelling narratives
-- Bridge technical and business
-
-**🔄 Keep Evolving**
-- Iterate based on feedback  
-- Monitor model performance
-- Adapt to changing requirements
-
-</td>
-</tr>
-</table>
-
----
-
-## 💡 My Philosophy
-
-<div align="center">
-
-<img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="400">
-
-</div>
-
-<table>
-<tr>
-<td align="center" width="20%">
-<img src="https://user-images.githubusercontent.com/74038190/212284094-e50ceae2-de86-4dd8-a96b-f105895cb786.gif" width="60">
-<br><b>Purpose First</b>
-<br><sub>Know <i>why</i> before <i>how</i></sub>
-</td>
-<td align="center" width="20%">
-<img src="https://user-images.githubusercontent.com/74038190/212284145-bf2c01a8-c448-4f1a-b911-99cc33e2a423.gif" width="60">
-<br><b>Story Over Stats</b>
-<br><sub>Insights must be actionable</sub>
-</td>
-<td align="center" width="20%">
-<img src="https://user-images.githubusercontent.com/74038190/212284103-c58ddb98-bcc2-4ede-b68b-47b5a8b63f5d.gif" width="60">
-<br><b>Iterate Relentlessly</b>
-<br><sub>Feedback drives excellence</sub>
-</td>
-<td align="center" width="20%">
-<img src="https://user-images.githubusercontent.com/74038190/212284107-fc9116ee-d67c-47c2-a80d-5ba1e4e419b6.gif" width="60">
-<br><b>Ethical AI</b>
-<br><sub>Responsibility = Accuracy</sub>
-</td>
-<td align="center" width="20%">
-<img src="https://user-images.githubusercontent.com/74038190/212284111-0b737b0e-9e96-4c6e-88b6-8a3b9f7e7d5a.gif" width="60">
-<br><b>Collaboration Wins</b>
-<br><sub>Together we achieve more</sub>
-</td>
-</tr>
-</table>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-### 💻 Coding Metrics
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VAL-Jerono&theme=radical" width="99%" alt="Profile Summary">
-
-</div>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&border_radius=10&include_all_commits=true&count_private=true">
-  <img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&theme=vue&hide_border=true&border_radius=10&include_all_commits=true&count_private=true" width="49%" alt="GitHub Stats">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=radical&hide_border=true&background=0d1117&stroke=58a6ff&ring=1f6feb&fire=f85149&currStreakLabel=c9d1d9&sideLabels=58a6ff&currStreakNum=c9d1d9&dates=8b949e&border_radius=10">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&theme=vue&hide_border=true&border_radius=10" width="49%" alt="GitHub Streak">
-</picture>
-
-</div>
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&layout=donut-vertical&border_radius=10&langs_count=8">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&theme=vue&hide_border=true&layout=donut-vertical&border_radius=10&langs_count=8" width="38%" alt="Top Languages">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=VAL-Jerono&theme=radical&utcOffset=3">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=VAL-Jerono&theme=vue&utcOffset=3" width="30%" alt="Productive Time">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VAL-Jerono&theme=radical">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VAL-Jerono&theme=vue" width="30%" alt="Most Commit Language">
-</picture>
-
-</div>
-
-<div align="center">
-
-### 📈 Contribution Activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=github-dark-dimmed&hide_border=true&bg_color=0d1117&color=58a6ff&line=1f6feb&point=f85149&area=true&radius=10&custom_title=Contribution%20Graph">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=VAL-Jerono&theme=vue&hide_border=true&area=true&radius=10&custom_title=Contribution%20Graph" width="99%" alt="Contribution Graph">
-</picture>
-
-</div>
-
-<div align="center">
-
-### 🏆 Achievements
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10">
-  <img src="https://github-profile-trophy.vercel.app/?username=VAL-Jerono&theme=flat&no-frame=true&column=7&margin-w=10&margin-h=10" alt="GitHub Trophies">
-</picture>
-
-</div>
-
----
-
-## 🤝 Let's Connect
-
-<div align="center">
-
-<img src="https://user-images.githubusercontent.com/74038190/212284126-818c4e20-138c-4509-b504-a2b984fb49c8.gif" width="400">
-
-**If you care about data that has a purpose, we're already speaking the same language.** 🗣️
 
 <br>
 
-💼 **[Connect on LinkedIn](https://www.linkedin.com/in/valerie-jerono)** | 📧 **[Email Me](mailto:kipropvalerie@gmail.com)** | 🌍 **Based in Nairobi, Kenya and collaborating globally**
+## Kwa Ufupi — In Short
 
+I started in actuarial science, where I learned to be exact: a mortality table does not forgive a careless assumption, and a premium that is wrong by two percent is a promise the company cannot keep. That precision never left me. What changed is where I point it.
+
+Today I build machine learning systems for insurance, risk, and human behaviour, work that lives at iLabAfrica, Strathmore University as a Research Scholar, and at Vondetta, the AI decision systems firm I founded. I write about what I build, because a model nobody understands is a model nobody trusts, and trust is the actual product in risk and insurance work.
+
+If you are here for a list of frameworks, you will find one. But the frameworks are not the point. The point is what they were built to decide.
+
+<br>
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="33%">
+
+### Risk
+Pricing, claims, fraud, and the quiet mathematics of "what could go wrong"
+
+</td>
+<td align="center" width="33%">
+
+### Behaviour
+Why people lapse, churn, default, or stay, and what the data says before they tell you
+
+</td>
+<td align="center" width="33%">
+
+### Systems
+Models that ship, with APIs, dashboards, and people who actually use them
+
+</td>
+</tr>
+</table>
 </div>
 
----
+<br>
+
+## How I Work
+
+A pipeline is not magic. It is a sequence of honest decisions, and I would rather show you mine than perform mystique.
+
+```mermaid
+graph LR
+    A[Understand the Decision] --> B[Respect the Data]
+    B --> C[Model with Intent]
+    C --> D[Explain the Why]
+    D --> E[Ship It]
+    E --> F[Watch What Happens]
+
+    style A fill:#00695C,stroke:#003D33,stroke-width:2px,color:#fff
+    style B fill:#00897B,stroke:#003D33,stroke-width:2px,color:#fff
+    style C fill:#26A69A,stroke:#003D33,stroke-width:2px,color:#fff
+    style D fill:#4DB6AC,stroke:#003D33,stroke-width:2px,color:#000
+    style E fill:#80CBC4,stroke:#003D33,stroke-width:2px,color:#000
+    style F fill:#B2DFDB,stroke:#003D33,stroke-width:2px,color:#000
+```
+
+I do not start with a model. I start with the question of who is going to act on the answer, an underwriter, a policymaker, a logistics manager, and what they need to trust before they will. Everything downstream, the feature engineering, the model family, the explainability layer, gets shaped by that one constraint.
+
+<br>
+
+## Selected Work
+
+Each of these began as a real question, not a dataset I found interesting. I have grouped them by the kind of decision they were built to support.
+
+<br>
+
+### Insurance & Risk
+
+**Karbima Care** — *Kenya's AI-driven auto insurance brokerage*
+Four production ML models (AUC up to 0.88) sitting on top of a 105,000-document FAISS retrieval system, with automated OCR reading logbooks, licenses, and IDs at intake. The result: quote time dropped 83%, and the projected annual ROI sits at KES 4.4M. This is the project that taught me that a RAG system is only as good as the latency a human will tolerate before giving up; under 50ms became the line I would not cross.
+`Python` `FAISS` `Sentence-Transformers` `FastAPI` `Ollama` `Tesseract OCR`
+
+**UnderwriteGPT** — *Explainable underwriting for African insurers*
+58,592 real policy records, reduced to 41,012 structured narratives an underwriter could actually read and challenge. The risk scoring framework achieves 8.15% score separation between claim and no-claim cases, and the system reaches 89% alignment with expert underwriter decisions. Live at `underwritegpt.streamlit.app`.
+`Sentence-BERT` `FAISS` `Scikit-learn` `Streamlit` `Explainable AI`
+
+**Intelligent Insurance Customer Analytics Platform** — *Five layers, one portfolio*
+Built across a €25.8M, 53,502-policy portfolio: churn (89.26% ROC-AUC), claims frequency (92.25% ROC-AUC), a leakage-corrected severity model, and a ten-year customer lifetime value engine. The finding that mattered most was not technical, it was that agent-channel customers carried a €483 CLV advantage over broker-channel customers, a gap nobody had quantified before. Pilot deployment across 20 agents cut churn by 12.3%.
+`XGBoost` `TensorFlow` `MLflow` `Docker Compose` `Prometheus` `Grafana`
+
+<br>
+
+### Quantitative Finance
+
+**WorldQuant BRAIN Alpha Research** — *What actually drives a Sharpe ratio*
+I built and tested multiple systematic equity alpha strategies, eventually landing on an architecture I call X2: a size-neutralized blend of earnings yield, return on equity, and short-term reversion, reaching Sharpe ratios between 2.15 and 2.27. The more interesting result was negative: after controlled testing, I permanently flagged a popular volatility-grouping variable as unreliable, because a single anomalous date was quietly corrupting every bucket downstream. Knowing what not to trust turned out to matter as much as the strategy itself.
+`Systematic Equity Strategy` `Factor Modeling` `Risk-Adjusted Returns`
+
+**GARCH Volatility Forecasting** — *Bitcoin does not behave like equities*
+A full econometric pipeline across 1,082 daily returns of the ProShares Bitcoin Strategy ETF. GARCH(1,1) won on AIC/BIC, with a persistence parameter of 0.9044 and a shock half-life of 6.9 trading days. The headline finding: Bitcoin shows no leverage effect, the asymmetric volatility response that defines equity markets simply is not there, which has real implications for anyone pricing crypto derivatives with equity-market intuition.
+`Python` `arch` `statsmodels` `Time Series Econometrics`
+
+<br>
+
+### Public Policy & Human Systems
+
+**Housing Financial Vulnerability Score** — *My MSc dissertation, built to be used, not shelved*
+A composite vulnerability index across five dimensions, financial stress, tenure insecurity, physical hazard, dwelling quality, and utility deprivation, built from Kenya's 2023/24 Housing Survey covering 21,347 households across all 47 counties. The construction model reaches a PR-AUC of 0.9315; the field-deployable proxy model holds up at 0.65 to 0.78 AUC on unseen data, which matters more, because a model nobody can run in the field is a model nobody will use. SHAP analysis surfaced land ownership as the single strongest predictor of vulnerability, ahead of income. Deployed as an interactive choropleth dashboard with a bilingual, Groq-powered policy advisor.
+`XGBoost` `SHAP` `Survey-Weighted Modeling` `GeoPandas` `Spatial CV`
+
+**HARAKA MED** — *Clinical triage for the community health worker, not the hospital*
+Built at the Harvard HSIL Hackathon at CMU Africa in Kigali, where it earned an Honorable Mention. A trilingual AI triage assistant, English, Kiswahili, Kinyarwanda, that follows WHO IMCI protocols and runs over USSD, meaning it works on a basic feature phone with no data connection. The hardest design constraint was not the model, it was accepting that the best AI system in the world is useless to a community health worker without signal.
+`Next.js` `Groq` `Africa's Talking USSD` `WHO IMCI Protocols`
+
+**Miraa Transportation Optimization** — *Logistics for a crop that spoils by the hour*
+Applied Vogel's Approximation Method and linear programming to route miraa from Meru County to four markets, with a four-component cost model that weighs distance against road quality, vehicle type, and a perishability penalty that increases by the hour. Validated against SciPy's LP solver, landing on an optimal total cost of KES 101,700. Prototyped as MiraaMover, a React app matching producers to transporters in real time.
+`Python` `SciPy` `Linear Programming` `React`
+
+<br>
+
+## Technical Toolkit
 
 <div align="center">
 
-### *"Numbers tell the truth. I make sure they tell it well."* ✨
+**Machine Learning & Statistics**
+![Python](https://img.shields.io/badge/Python-00695C?style=flat-square&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-00695C?style=flat-square&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-00695C?style=flat-square&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-00695C?style=flat-square&logo=tensorflow&logoColor=white)
+![R](https://img.shields.io/badge/R-00695C?style=flat-square&logo=r&logoColor=white)
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+**NLP, RAG & AI Systems**
+![FAISS](https://img.shields.io/badge/FAISS-00695C?style=flat-square&logoColor=white)
+![spaCy](https://img.shields.io/badge/spaCy-00695C?style=flat-square&logo=spacy&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain%20concepts-00695C?style=flat-square&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-00695C?style=flat-square&logo=fastapi&logoColor=white)
 
-**⭐ Don't forget to star this repository if you found it interesting!**
+**Quant, Risk & Time Series**
+![GARCH](https://img.shields.io/badge/GARCH%20Modeling-00695C?style=flat-square&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-00695C?style=flat-square&logo=postgresql&logoColor=white)
+![statsmodels](https://img.shields.io/badge/statsmodels-00695C?style=flat-square&logoColor=white)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer&fontSize=0" width="100%">
+**Deployment & Visualization**
+![Docker](https://img.shields.io/badge/Docker-00695C?style=flat-square&logo=docker&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-00695C?style=flat-square&logo=streamlit&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-00695C?style=flat-square&logo=powerbi&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-00695C?style=flat-square&logo=plotly&logoColor=white)
+
+</div>
+
+<br>
+
+## GitHub Activity
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=VAL-Jerono&show_icons=true&hide_border=true&bg_color=00000000&title_color=00695C&icon_color=00897B&text_color=333333&border_radius=10&count_private=true" width="49%" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=VAL-Jerono&hide_border=true&background=00000000&stroke=00695C&ring=00897B&fire=00695C&currStreakLabel=00695C&border_radius=10" width="49%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=VAL-Jerono&hide_border=true&bg_color=00000000&title_color=00695C&text_color=333333&layout=compact&border_radius=10&langs_count=8" width="49%" />
+
+</div>
+
+<br>
+
+## Where This Is Going
+
+I am candid about the shape of my career right now: early, fast-moving, and built on project depth rather than a decade of enterprise titles. I think that is a fair trade for someone who has gone from actuarial underwriting to claims analytics to research scholarship to founding a company in under three years, and I would rather show you the trajectory than oversell the present tense.
+
+The throughline across all of it, actuarial science, underwriting, claims, customer analytics, research, is one question asked in different rooms: *what does this number mean for the person who has to live with the decision it produces?* That question is what I am building a career around, and InsurTech, risk AI, and explainable ML are simply where it is currently most useful to ask it.
+
+<br>
+
+<div align="center">
+
+*Numbers tell the truth. I try to make sure they tell it well.*
+
+<a href="https://www.linkedin.com/in/valerie-jerono"><img src="https://img.shields.io/badge/Let's%20Connect-00695C?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:40E0D0,100:00695C&height=100&section=footer" width="100%"/>
 
 </div>
