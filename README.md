@@ -2,12 +2,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00695C,100:40E0D0&height=180&section=header&text=Valerie%20Jerono&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=ML%20Engineer%20%7C%20Actuarial%20Analyst%20%7C%20AI%20Researcher%20in%20InsurTech,%20Risk%20%26%20Behaviour&descAlignY=58&descSize=16" width="100%"/>
 
+
 <a href="https://www.linkedin.com/in/valerie-jerono"><img src="https://img.shields.io/badge/LinkedIn-Connect-00695C?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:kipropvalerie@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-00695C?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://medium.com/@Vondetta"><img src="https://img.shields.io/badge/Medium-Read%20My%20Work-00695C?style=for-the-badge&logo=medium&logoColor=white" /></a>
 <img src="https://komarev.com/ghpvc/?username=VAL-Jerono&style=for-the-badge&color=00695C&label=Profile+Views" />
 
 </div>
+
 
 <br>
 
@@ -16,6 +18,7 @@
 I started in actuarial science, where I learned to be exact: a mortality table does not forgive a careless assumption, and a premium that is wrong by two percent is a promise the company cannot keep. That precision never left me. What changed is where I point it.
 
 Today I build machine learning systems for insurance, risk, and human behaviour, work that lives at iLabAfrica, Strathmore University as a Research Scholar, and at Vondetta, the AI decision systems firm I founded. I write about what I build, because a model nobody understands is a model nobody trusts, and trust is the actual product in risk and insurance work.
+
 
 If you are here for a list of frameworks, you will find one. But the frameworks are not the point. The point is what they were built to decide.
 
