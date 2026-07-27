@@ -3,7 +3,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00695C,100:40E0D0&height=180&section=header&text=Valerie%20Jerono&fontSize=46&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=ML%20Engineer%20%7C%20Actuarial%20Analyst%20%7C%20AI%20Researcher%20in%20InsurTech,%20Risk%20%26%20Behaviour&descAlignY=58&descSize=16" width="100%"/>
 
 
-
 <a href="https://www.linkedin.com/in/valerie-jerono"><img src="https://img.shields.io/badge/LinkedIn-Connect-00695C?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:kipropvalerie@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20Hello-00695C?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <a href="https://medium.com/@Vondetta"><img src="https://img.shields.io/badge/Medium-Read%20My%20Work-00695C?style=for-the-badge&logo=medium&logoColor=white" /></a>
