@@ -169,7 +169,6 @@ Applied Vogel's Approximation Method and linear programming to route miraa from 
 
 </div>
 
-> If a card above looks blank, GitHub's badge services occasionally rate-limit or sleep. Refreshing the page or waiting a moment usually fixes it; the underlying activity itself is unaffected.
 
 <br>
 
