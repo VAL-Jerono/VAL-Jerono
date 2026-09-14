@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valerie Jerono — ML Engineer & Actuarial Analyst</title>
+<title>Valerie Jerono, ML Engineer & Actuarial Analyst</title>
 <meta name="description" content="ML Engineer. Actuarial Analyst. Founder of Vondetta. Nairobi, Kenya. I build AI systems that insurers, hospitals and governments can trust with real decisions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@ a { color: inherit; }
   * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
 
-/* ───────── NAV ───────── */
+/* NAV */
 nav {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 500;
@@ -136,19 +136,18 @@ nav {
 }
 [data-theme="dark"] .theme-toggle .dot { transform: translateX(2px); }
 
-/* mobile nav toggle */
 .nav-burger { display: none; background: none; border: 1px solid var(--line); border-radius: 6px; padding: 0.45rem 0.6rem; cursor: pointer; color: var(--ink); }
 
-/* ───────── PANELS (tab-controlled) ───────── */
+/* PANELS */
 .panel { display: none; }
 .panel.active { display: block; animation: panelIn 0.35s ease; }
 @keyframes panelIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
 
-/* ───────── HERO ───────── */
+/* HERO */
 .hero {
-  min-height: 92vh;
+  min-height: 82vh;
   display: flex; flex-direction: column; justify-content: center;
-  padding: 7.5rem 3rem 4rem;
+  padding: 7.5rem 3rem 3.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -193,7 +192,7 @@ nav {
   font-size: 0.78rem;
   font-weight: 500;
   color: var(--sage);
-  margin-bottom: 2rem;
+  margin-bottom: 1.8rem;
 }
 [data-theme="dark"] .hero-eyebrow { color: #8FB3A1; }
 .hero-eyebrow .dot {
@@ -205,22 +204,22 @@ nav {
 .hero-name {
   position: relative;
   font-family: var(--serif);
-  font-size: clamp(2.5rem, 6.4vw, 5.4rem);
+  font-size: clamp(2.4rem, 6vw, 4.9rem);
   font-weight: 400;
-  line-height: 1.03;
+  line-height: 1.05;
   letter-spacing: -0.015em;
   color: var(--ink);
-  max-width: 18ch;
+  max-width: 15ch;
 }
 .hero-name em { font-style: italic; font-weight: 400; color: var(--pink); }
 
 .hero-sub {
   position: relative;
-  font-size: clamp(1.02rem, 1.5vw, 1.2rem);
+  font-size: clamp(1rem, 1.4vw, 1.14rem);
   color: var(--ink-soft);
   line-height: 1.7;
-  max-width: 620px;
-  margin-top: 1.6rem;
+  max-width: 560px;
+  margin-top: 1.4rem;
   font-weight: 400;
 }
 .hero-sub strong { color: var(--ink); font-weight: 600; }
@@ -229,28 +228,19 @@ nav {
   position: relative;
   display: flex; flex-wrap: wrap;
   align-items: flex-end; justify-content: space-between;
-  gap: 2.5rem;
-  margin-top: 2.75rem;
+  gap: 2rem;
+  margin-top: 2.2rem;
 }
-.hero-descriptor {
-  font-size: clamp(0.95rem, 1.4vw, 1.02rem);
-  color: var(--ink-soft);
-  line-height: 1.7;
-  max-width: 480px;
-  font-weight: 400;
-}
-.hero-descriptor strong { color: var(--ink); font-weight: 600; }
 .hero-roles {
   font-family: var(--mono);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--ink-soft);
-  line-height: 1.9;
-  text-align: right;
+  line-height: 1.85;
 }
 .hero-roles b { color: var(--ink); font-weight: 600; }
 .hero-roles .pinkb { color: var(--pink); }
 
-.hero-actions { display: flex; gap: 0.8rem; margin-top: 2.4rem; flex-wrap: wrap; position: relative; }
+.hero-actions { display: flex; gap: 0.8rem; margin-top: 2rem; flex-wrap: wrap; position: relative; }
 .btn-primary, .btn-secondary {
   font-family: var(--sans); font-size: 0.86rem; font-weight: 600;
   padding: 0.85rem 1.5rem; border-radius: 2px; cursor: pointer;
@@ -261,7 +251,7 @@ nav {
 .btn-secondary { background: none; border: 1px solid var(--ink); color: var(--ink); }
 .btn-secondary:hover { background: var(--ink); color: var(--bg); }
 
-/* ───────── STAT STRIP ───────── */
+/* STAT STRIP */
 .stat-strip {
   position: relative;
   border-top: 1px solid var(--line);
@@ -270,7 +260,7 @@ nav {
 }
 .stat-strip-inner { display: grid; grid-template-columns: repeat(5, 1fr); }
 .stat {
-  padding: 2rem 1.6rem;
+  padding: 1.8rem 1.5rem;
   border-right: 1px solid var(--dark-block-line);
   opacity: 0;
   transform: translateY(14px);
@@ -280,42 +270,42 @@ nav {
 .stat.visible { opacity: 1; transform: translateY(0); }
 .stat-value {
   font-family: var(--mono);
-  font-size: clamp(1.3rem, 2.1vw, 1.85rem);
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
   font-weight: 600;
   color: var(--dark-block-text);
   line-height: 1;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.6rem;
 }
 .stat-value .accent { color: var(--pink); }
-.stat-label { font-size: 0.72rem; color: var(--dark-block-soft); line-height: 1.5; margin-bottom: 0.45rem; }
-.stat-meaning { font-size: 0.72rem; color: var(--pink); line-height: 1.45; font-style: italic; }
+.stat-label { font-size: 0.7rem; color: var(--dark-block-soft); line-height: 1.45; margin-bottom: 0.4rem; }
+.stat-meaning { font-size: 0.7rem; color: var(--pink); line-height: 1.4; font-style: italic; }
 [data-theme="dark"] .stat-meaning { color: #FF6FAE; }
 
-/* ───────── SECTIONS ───────── */
-.section { padding: 5.5rem 3rem; position: relative; }
-.section-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.5rem; }
+/* SECTIONS */
+.section { padding: 5rem 3rem; position: relative; }
+.section-head { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 2.2rem; }
 .section-eyebrow { font-family: var(--mono); font-size: 0.76rem; color: var(--sage); text-transform: uppercase; letter-spacing: 0.06em; }
 [data-theme="dark"] .section-eyebrow { color: #8FB3A1; }
 .section-title { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.6rem); font-weight: 400; color: var(--ink); }
 .section-title em { font-style: italic; color: var(--pink); }
 .section-rule { flex: 1; height: 1px; background: var(--line); margin-left: 0.5rem; }
-.section-intro { font-size: 1rem; color: var(--ink-soft); line-height: 1.8; max-width: 68ch; margin: -1.4rem 0 3rem; }
+.section-intro { font-size: 0.98rem; color: var(--ink-soft); line-height: 1.75; max-width: 62ch; margin: -1.2rem 0 2.6rem; }
 .section-intro strong { color: var(--ink); }
 
-/* ───────── ABOUT ───────── */
+/* ABOUT */
 .about { background: var(--bg-2); border-bottom: 1px solid var(--line); }
 .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 4.5rem; align-items: start; }
-.about-statement { font-family: var(--serif); font-size: clamp(1.5rem, 2.3vw, 2.05rem); font-weight: 400; line-height: 1.36; color: var(--ink); }
+.about-statement { font-family: var(--serif); font-size: clamp(1.4rem, 2.1vw, 1.9rem); font-weight: 400; line-height: 1.38; color: var(--ink); }
 .about-statement em { font-style: italic; color: var(--pink); }
-.about-body { display: flex; flex-direction: column; gap: 1.4rem; }
-.about-body p { font-size: 0.98rem; color: var(--ink-soft); line-height: 1.8; }
+.about-body { display: flex; flex-direction: column; gap: 1.2rem; }
+.about-body p { font-size: 0.96rem; color: var(--ink-soft); line-height: 1.75; }
 .about-body p strong { color: var(--ink); font-weight: 600; }
-.about-creds { margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.65rem; border-top: 1px solid var(--line); padding-top: 1.4rem; }
-.cred-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.86rem; flex-wrap: wrap; }
+.about-creds { margin-top: 0.4rem; display: flex; flex-direction: column; gap: 0.6rem; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.cred-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.85rem; flex-wrap: wrap; }
 .cred-label { color: var(--ink-soft); }
 .cred-val { font-family: var(--mono); color: var(--ink); font-weight: 500; text-align: right; }
 
-.niche-pills { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.3rem; }
+.niche-pills { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.2rem; }
 .niche-pill {
   font-family: var(--mono);
   font-size: 0.7rem;
@@ -327,30 +317,27 @@ nav {
 }
 [data-theme="dark"] .niche-pill { color: #FF6FAE; }
 
-/* why-hire block */
-.why-hire { margin-top: 3.5rem; padding-top: 3rem; border-top: 1px solid var(--line); }
-.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
-.why-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 4px; padding: 1.6rem; }
-.why-card .why-title { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); margin-bottom: 0.6rem; }
-.why-card .why-body { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.65; }
+.why-hire { margin-top: 3rem; padding-top: 2.6rem; border-top: 1px solid var(--line); }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.why-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 4px; padding: 1.4rem; }
+.why-card .why-title { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); margin-bottom: 0.5rem; }
+.why-card .why-body { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.6; }
 
-/* ───────── JOURNEY (narrative timeline) ───────── */
+/* JOURNEY */
 .journey-list { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--line); }
-.journey-item { display: grid; grid-template-columns: 150px 1fr; gap: 2.5rem; padding: 2.4rem 0; border-bottom: 1px solid var(--line); }
+.journey-item { display: grid; grid-template-columns: 140px 1fr; gap: 2.2rem; padding: 2rem 0; border-bottom: 1px solid var(--line); }
 .journey-period { font-family: var(--mono); font-size: 0.78rem; color: var(--sage); padding-top: 0.3rem; }
 [data-theme="dark"] .journey-period { color: #8FB3A1; }
-.journey-role { font-family: var(--serif); font-size: 1.35rem; color: var(--ink); margin-bottom: 0.9rem; }
-.journey-role span { color: var(--ink-soft); font-family: var(--sans); font-size: 0.85rem; font-weight: 500; }
-.journey-block { margin-bottom: 1rem; }
-.journey-label { font-family: var(--mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--pink); margin-bottom: 0.35rem; }
-[data-theme="dark"] .journey-label { color: #FF6FAE; }
-.journey-text { font-size: 0.94rem; color: var(--ink-soft); line-height: 1.75; max-width: 66ch; }
+.journey-role { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); margin-bottom: 0.7rem; }
+.journey-role span { color: var(--ink-soft); font-family: var(--sans); font-size: 0.82rem; font-weight: 500; }
+.journey-text { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.7; max-width: 66ch; margin-bottom: 0.5rem; }
 .journey-text strong { color: var(--ink); }
+.journey-meaning { font-size: 0.88rem; color: var(--ink); line-height: 1.6; max-width: 62ch; font-style: italic; }
 
-/* ───────── WORK ───────── */
+/* WORK */
 .work-filter {
   display: flex; flex-wrap: wrap; gap: 0.6rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.2rem;
 }
 .filter-btn {
   font-family: var(--mono);
@@ -370,8 +357,8 @@ nav {
 .work-item {
   display: grid;
   grid-template-columns: 110px 1.5fr 0.85fr;
-  gap: 2.5rem;
-  padding: 2.4rem 0;
+  gap: 2.2rem;
+  padding: 2rem 0;
   border-bottom: 1px solid var(--line);
   opacity: 0;
   transform: translateY(18px);
@@ -382,9 +369,9 @@ nav {
 .work-item.hidden-cat { display: none; }
 .work-period { font-family: var(--mono); font-size: 0.78rem; color: var(--sage); padding-top: 0.3rem; }
 [data-theme="dark"] .work-period { color: #8FB3A1; }
-.work-main { display: flex; flex-direction: column; gap: 0.8rem; }
+.work-main { display: flex; flex-direction: column; gap: 0.7rem; }
 .work-title-row { display: flex; align-items: baseline; gap: 0.9rem; flex-wrap: wrap; }
-.work-title { font-family: var(--serif); font-size: 1.45rem; font-weight: 500; color: var(--ink); }
+.work-title { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; color: var(--ink); }
 .work-role {
   font-family: var(--mono);
   font-size: 0.68rem;
@@ -394,27 +381,27 @@ nav {
   border-radius: 2px;
 }
 [data-theme="dark"] .work-role { color: #FF6FAE; }
-.work-desc { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.72; max-width: 62ch; }
+.work-desc { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.68; max-width: 60ch; }
 .work-desc strong { color: var(--ink); }
 .work-meaning {
-  font-size: 0.88rem; color: var(--ink); line-height: 1.65; max-width: 60ch;
+  font-size: 0.86rem; color: var(--ink); line-height: 1.6; max-width: 58ch;
   background: color-mix(in srgb, var(--sage) 9%, transparent);
   border-left: 2px solid var(--sage);
-  padding: 0.7rem 0.95rem;
+  padding: 0.6rem 0.9rem;
   border-radius: 0 3px 3px 0;
 }
-.work-meaning b { color: var(--sage); font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 0.3rem; }
+.work-meaning b { color: var(--sage); font-family: var(--mono); font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 0.25rem; }
 [data-theme="dark"] .work-meaning b { color: #8FB3A1; }
 .work-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.1rem; }
 .work-tag { font-family: var(--mono); font-size: 0.66rem; color: var(--ink-soft); border: 1px solid var(--line); padding: 0.2rem 0.55rem; border-radius: 2px; }
-.work-link { font-family: var(--mono); font-size: 0.74rem; color: var(--pink); text-decoration: none; margin-top: 0.2rem; display: inline-block; }
+.work-link { font-family: var(--mono); font-size: 0.72rem; color: var(--pink); text-decoration: none; margin-top: 0.1rem; display: inline-block; }
 .work-link:hover { text-decoration: underline; }
 .work-metric { display: flex; flex-direction: column; justify-content: center; align-items: flex-end; text-align: right; border-left: 1px solid var(--line); padding-left: 2rem; }
-.work-metric-value { font-family: var(--mono); font-size: 1.75rem; font-weight: 600; color: var(--ink); line-height: 1; }
-.work-metric-value .unit { font-size: 1rem; color: var(--pink); }
-.work-metric-label { font-size: 0.72rem; color: var(--ink-soft); margin-top: 0.5rem; max-width: 15ch; }
+.work-metric-value { font-family: var(--mono); font-size: 1.65rem; font-weight: 600; color: var(--ink); line-height: 1; }
+.work-metric-value .unit { font-size: 0.95rem; color: var(--pink); }
+.work-metric-label { font-size: 0.7rem; color: var(--ink-soft); margin-top: 0.5rem; max-width: 15ch; }
 
-/* ───────── CRAFT ───────── */
+/* CRAFT */
 .craft { background: var(--dark-block); }
 .craft .section-eyebrow { color: #8FB3A1; }
 .craft .section-title { color: var(--dark-block-text); }
@@ -424,22 +411,22 @@ nav {
 .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--dark-block-line); border: 1px solid var(--dark-block-line); }
 .skill-block {
   background: var(--dark-block);
-  padding: 2.1rem 1.9rem;
+  padding: 1.8rem 1.7rem;
   opacity: 0;
   transform: translateY(14px);
   transition: opacity 0.55s ease, transform 0.55s ease, background 0.2s;
 }
 .skill-block.visible { opacity: 1; transform: translateY(0); }
 .skill-block:hover { background: color-mix(in srgb, var(--pink) 6%, var(--dark-block)); }
-.skill-name { font-family: var(--mono); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pink); margin-bottom: 0.5rem; }
-.skill-plain { font-size: 0.8rem; color: var(--dark-block-soft); line-height: 1.6; margin-bottom: 0.9rem; font-style: italic; }
-.skill-list { font-size: 0.85rem; color: var(--dark-block-soft); line-height: 1.85; }
+.skill-name { font-family: var(--mono); font-size: 0.76rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--pink); margin-bottom: 0.45rem; }
+.skill-plain { font-size: 0.78rem; color: var(--dark-block-soft); line-height: 1.55; margin-bottom: 0.8rem; font-style: italic; }
+.skill-list { font-size: 0.83rem; color: var(--dark-block-soft); line-height: 1.8; }
 
-/* ───────── WRITING ───────── */
+/* WRITING */
 .writing-list { display: flex; flex-direction: column; border-top: 1px solid var(--line); }
 .writing-item {
   display: flex; align-items: baseline; justify-content: space-between;
-  gap: 2rem; padding: 1.55rem 0;
+  gap: 2rem; padding: 1.4rem 0;
   border-bottom: 1px solid var(--line);
   text-decoration: none;
   transition: padding-left 0.25s, color 0.2s;
@@ -448,42 +435,42 @@ nav {
 [data-theme="dark"] .writing-item:hover { color: #FF6FAE; }
 .writing-num { font-family: var(--mono); font-size: 0.78rem; color: var(--sage); min-width: 2.2rem; }
 [data-theme="dark"] .writing-num { color: #8FB3A1; }
-.writing-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--ink); flex: 1; }
+.writing-title { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--ink); flex: 1; }
 .writing-item:hover .writing-title { color: var(--pink-deep); }
 [data-theme="dark"] .writing-item:hover .writing-title { color: #FF6FAE; }
 .writing-arrow { font-family: var(--mono); color: var(--pink); font-size: 0.95rem; opacity: 0; transition: opacity 0.2s, transform 0.2s; }
 .writing-item:hover .writing-arrow { opacity: 1; transform: translateX(3px); }
 
-/* ───────── TRAJECTORY ───────── */
+/* TRAJECTORY */
 .trajectory { background: var(--bg-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.trajectory-text { font-size: 1rem; color: var(--ink-soft); line-height: 1.85; max-width: 78ch; }
+.trajectory-text { font-size: 0.96rem; color: var(--ink-soft); line-height: 1.8; max-width: 74ch; }
 .trajectory-text strong { color: var(--ink); font-weight: 600; }
 .trajectory-text em { font-style: italic; color: var(--pink); }
-.path-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 2rem; font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); }
+.path-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 1.8rem; font-family: var(--mono); font-size: 0.76rem; color: var(--ink-soft); }
 .path-step { padding: 0.35rem 0.75rem; border: 1px solid var(--line); border-radius: 20px; }
 .path-arrow { color: var(--pink); }
 
-/* ───────── REFERENCES ───────── */
-.ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-.ref-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 4px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.4rem; }
-.ref-name { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); }
-.ref-role { font-size: 0.87rem; color: var(--ink-soft); line-height: 1.5; }
+/* REFERENCES */
+.ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
+.ref-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: 4px; padding: 1.6rem; display: flex; flex-direction: column; gap: 0.35rem; }
+.ref-name { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); }
+.ref-role { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.5; }
 .ref-locked {
-  margin-top: 0.9rem;
-  font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft);
+  margin-top: 0.85rem;
+  font-family: var(--mono); font-size: 0.7rem; color: var(--ink-soft);
   display: flex; align-items: center; gap: 0.4rem;
 }
 .ref-locked svg { width: 13px; height: 13px; flex-shrink: 0; }
 .ref-request-btn {
-  margin-top: 1rem;
-  font-family: var(--sans); font-size: 0.82rem; font-weight: 600;
+  margin-top: 0.9rem;
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 600;
   background: none; border: 1px solid var(--ink); color: var(--ink);
-  padding: 0.65rem 1rem; border-radius: 2px; cursor: pointer;
+  padding: 0.6rem 1rem; border-radius: 2px; cursor: pointer;
   transition: background 0.2s, color 0.2s;
   align-self: flex-start;
 }
 .ref-request-btn:hover { background: var(--pink); border-color: var(--pink); color: #fff; }
-.ref-note { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.7; max-width: 70ch; margin-bottom: 2.2rem; }
+.ref-note { font-size: 0.84rem; color: var(--ink-soft); line-height: 1.65; max-width: 68ch; margin-bottom: 2rem; }
 
 .ref-modal-backdrop {
   display: none; position: fixed; inset: 0; z-index: 900;
@@ -495,8 +482,8 @@ nav {
   background: var(--bg); border: 1px solid var(--line); border-radius: 6px;
   padding: 2rem; max-width: 420px; width: 100%;
 }
-.ref-modal h3 { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); margin-bottom: 0.6rem; }
-.ref-modal p { font-size: 0.87rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 1.2rem; }
+.ref-modal h3 { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); margin-bottom: 0.6rem; }
+.ref-modal p { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.6; margin-bottom: 1.1rem; }
 .ref-modal-field { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
 .ref-modal-field label { font-family: var(--mono); font-size: 0.7rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
 .ref-modal-field input, .ref-modal-field textarea {
@@ -506,18 +493,18 @@ nav {
 .ref-modal-field input:focus, .ref-modal-field textarea:focus { border-color: var(--pink); }
 .ref-modal-actions { display: flex; gap: 0.6rem; margin-top: 0.4rem; }
 .ref-modal-cancel { background: none; border: 1px solid var(--line); color: var(--ink-soft); font-size: 0.82rem; padding: 0.65rem 1rem; border-radius: 2px; cursor: pointer; }
-.ref-status { margin-top: 1.5rem; font-size: 0.85rem; color: var(--sage); display: none; }
+.ref-status { margin-top: 1.4rem; font-size: 0.84rem; color: var(--sage); display: none; }
 [data-theme="dark"] .ref-status { color: #8FB3A1; }
 .ref-status.show { display: block; }
 
-/* ───────── CONTACT ───────── */
+/* CONTACT */
 .contact { background: var(--bg); }
 .contact-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: start; }
-.contact-big { font-family: var(--serif); font-size: clamp(2.1rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.14; color: var(--ink); }
+.contact-big { font-family: var(--serif); font-size: clamp(2rem, 3.8vw, 3rem); font-weight: 400; line-height: 1.16; color: var(--ink); }
 .contact-big em { font-style: italic; color: var(--pink); }
-.contact-sub { margin-top: 1.25rem; font-size: 0.98rem; color: var(--ink-soft); line-height: 1.7; max-width: 42ch; }
-.contact-links { display: flex; flex-direction: column; gap: 1rem; margin-top: 2.5rem; }
-.contact-link { display: flex; align-items: center; justify-content: space-between; text-decoration: none; padding: 0.85rem 0; border-bottom: 1px solid var(--line); transition: padding-left 0.2s, color 0.2s; }
+.contact-sub { margin-top: 1.1rem; font-size: 0.96rem; color: var(--ink-soft); line-height: 1.65; max-width: 42ch; }
+.contact-links { display: flex; flex-direction: column; gap: 1rem; margin-top: 2.2rem; }
+.contact-link { display: flex; align-items: center; justify-content: space-between; text-decoration: none; padding: 0.8rem 0; border-bottom: 1px solid var(--line); transition: padding-left 0.2s, color 0.2s; }
 .contact-link:hover { padding-left: 0.5rem; color: var(--pink-deep); }
 [data-theme="dark"] .contact-link:hover { color: #FF6FAE; }
 .cl-label { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); }
@@ -557,7 +544,7 @@ nav {
 .cf-btn:hover { background: var(--pink-deep); border-color: var(--pink-deep); }
 .cf-btn:focus-visible, a:focus-visible, .nav-cta:focus-visible, .theme-toggle:focus-visible, .filter-btn:focus-visible, .tab-btn:focus-visible, button:focus-visible { outline: 2px solid var(--pink); outline-offset: 2px; }
 
-/* ───────── FOOTER ───────── */
+/* FOOTER */
 footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
 .footer-left { font-family: var(--serif); font-size: 0.9rem; font-style: italic; color: var(--ink-soft); }
 .footer-right { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft); }
@@ -607,21 +594,18 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   <button class="nav-burger" id="navBurger" aria-label="Open menu">☰</button>
 </nav>
 
-<!-- HERO (always visible, above the tabs) -->
+<!-- HERO -->
 <section class="hero">
   <canvas class="hero-canvas" id="modelCanvas"></canvas>
   <div class="hero-grid-bg"></div>
-  <span class="hero-eyebrow"><span class="dot"></span>Nairobi, Kenya &mdash; Available for select engagements</span>
-  <h1 class="hero-name">Models you can <em>defend</em> in a boardroom.</h1>
-  <p class="hero-sub">In plain terms: I build the AI and the analytics that sit behind big, expensive decisions &mdash; who gets an insurance quote and at what price, which patient gets seen first, which household is financially at risk. <strong>I trained first in actuarial science, the discipline of pricing risk so precisely that a small error becomes a broken promise.</strong> Every system I build still has to pass that test: can I explain, in one sentence, why it made this call?</p>
+  <span class="hero-eyebrow"><span class="dot"></span>Nairobi, Kenya. Open to select engagements.</span>
+  <h1 class="hero-name">I build AI that has to <em>show its work.</em></h1>
+  <p class="hero-sub">I design the models behind expensive decisions: who gets an insurance quote and at what price, which patient gets seen first, which household is a credit risk. I trained as an actuary first, so before I trust a prediction, I ask what happens if it's wrong. I've built this for insurers, a national hospital, and my own company.</p>
   <div class="hero-row">
-    <p class="hero-descriptor">
-      I've done this for insurers, a national hospital, a university research lab, and my own company. <strong>No black boxes, no jargon a non-technical stakeholder can't follow.</strong>
-    </p>
     <div class="hero-roles">
       <div><b>ML Engineer</b></div>
       <div><b>Actuarial Analyst</b></div>
-      <div>AI Researcher, <span class="pinkb">InsurTech &amp; Risk</span></div>
+      <div>AI Researcher, <span class="pinkb">InsurTech & Risk</span></div>
       <div><b>Founder</b>, Vondetta</div>
     </div>
   </div>
@@ -636,33 +620,33 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   <div class="stat-strip-inner" id="statStrip">
     <div class="stat">
       <div class="stat-value">105,<span class="accent">555</span></div>
-      <div class="stat-label">insurance policies her models have been trained and tested on</div>
-      <div class="stat-meaning">= a decade of one insurer's real customer history, learned from</div>
+      <div class="stat-label">insurance policies my models have learned from</div>
+      <div class="stat-meaning">a decade of real customer history, not sample data</div>
     </div>
     <div class="stat">
       <div class="stat-value">92<span class="accent">%</span></div>
-      <div class="stat-label">accuracy of her claims and churn prediction models</div>
-      <div class="stat-meaning">= right about 9 times out of 10 on who will claim or leave</div>
+      <div class="stat-label">accuracy of my claims and churn models</div>
+      <div class="stat-meaning">right about 9 times out of 10</div>
     </div>
     <div class="stat">
       <div class="stat-value">21,<span class="accent">347</span></div>
-      <div class="stat-label">Kenyan households behind her housing risk research</div>
-      <div class="stat-meaning">= a national-scale study, not a toy dataset</div>
+      <div class="stat-label">Kenyan households in my housing risk research</div>
+      <div class="stat-meaning">a national study, not a class project</div>
     </div>
     <div class="stat">
       <div class="stat-value">2.<span class="accent">27</span></div>
-      <div class="stat-label">Sharpe ratio on her stock-picking research strategy</div>
-      <div class="stat-meaning">= steady gains, not lucky swings (fund managers aim for 1+)</div>
+      <div class="stat-label">Sharpe ratio on my stock research strategy</div>
+      <div class="stat-meaning">steady gains, not a lucky streak</div>
     </div>
     <div class="stat">
       <div class="stat-value">89<span class="accent">%</span></div>
-      <div class="stat-label">how often her AI agreed with expert underwriters</div>
-      <div class="stat-meaning">= it thinks like a seasoned professional, fast</div>
+      <div class="stat-label">how often my AI agreed with expert underwriters</div>
+      <div class="stat-meaning">it thinks like a seasoned professional, fast</div>
     </div>
   </div>
 </div>
 
-<!-- ═══════════════ ABOUT ═══════════════ -->
+<!-- ABOUT -->
 <section class="panel active" id="panel-about">
 <section class="section about">
   <div class="section-head">
@@ -672,19 +656,19 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   <div class="about-grid">
     <div>
       <div class="about-statement">
-        I trained to <em>price risk</em> before I learned to model it. That order matters &mdash; and it's probably why you should hire me.
+        I trained to <em>price risk</em> before I learned to model it. That order is probably why you should hire me.
       </div>
       <div class="niche-pills">
         <span class="niche-pill">Explainable AI</span>
-        <span class="niche-pill">Risk &amp; InsurTech</span>
+        <span class="niche-pill">Risk & InsurTech</span>
         <span class="niche-pill">Human Behaviour</span>
         <span class="niche-pill">Policy Analytics</span>
       </div>
     </div>
     <div class="about-body">
-      <p>Here's the short version of who I am: I'm an actuary who learned to code, not a coder who picked up some statistics. That order matters more than it sounds. An actuary is trained from day one to ask "what happens if I'm wrong, and who pays for it?" before anything else. Most machine learning engineers never have to ask that question &mdash; I was taught nothing else <em>but</em> that question, for three years, before I ever touched a model.</p>
-      <p>Today I do both jobs at once. I'm a <strong>Research Scholar at iLabAfrica, Strathmore University</strong>, where my Master's research turns Kenya's national housing survey into a tool that can flag which households are financially at risk before a crisis hits. Alongside that, I run <strong>Vondetta</strong>, a small company I founded to build exactly this kind of decision-support AI for insurers, hospitals, and government offices across East Africa.</p>
-      <p>The one rule I hold myself to: <strong>if a client can't understand why my system made a decision, I haven't finished the job.</strong> A model that scores 95% accuracy but can't explain itself is not something I'll hand over to someone whose license, pricing, or health decisions depend on it.</p>
+      <p>I'm an actuary who learned to code, not a coder who picked up statistics. An actuary is trained to ask "what happens if I'm wrong, and who pays for it?" before anything else. I spent three years asking only that question, before I ever touched a model.</p>
+      <p>Today I do both jobs. I'm a <strong>Research Scholar at iLabAfrica, Strathmore University</strong>, turning Kenya's national housing survey into a tool that flags financially at-risk households early. I also run <strong>Vondetta</strong>, my own company building this kind of decision-support AI for insurers, hospitals, and government offices across East Africa.</p>
+      <p>My rule: if a client can't follow why my system made a decision, I haven't finished the job.</p>
       <div class="about-creds">
         <div class="cred-row"><span class="cred-label">Education</span><span class="cred-val">MSc Data Science, Strathmore &middot; BSc Actuarial Science, Daystar</span></div>
         <div class="cred-row"><span class="cred-label">Based in</span><span class="cred-val">Nairobi, Kenya</span></div>
@@ -694,37 +678,36 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   </div>
 
   <div class="why-hire">
-    <div class="section-head" style="margin-bottom:2rem;">
+    <div class="section-head" style="margin-bottom:1.8rem;">
       <span class="section-eyebrow">For the hiring manager</span>
       <div class="section-rule"></div>
     </div>
-    <p class="section-intro" style="margin-top:-1rem;">Three reasons this profile is worth a closer look, put plainly:</p>
     <div class="why-grid">
       <div class="why-card">
         <div class="why-title">I speak both languages</div>
-        <div class="why-body">I can sit in a room with data scientists and argue about model architecture, then walk into a boardroom and explain the same model to a CFO in one sentence. Most people can do one of those well. I've had to do both, every week, for two years.</div>
+        <div class="why-body">I can debate model architecture with a data team, then explain the same model to a CFO in one sentence.</div>
       </div>
       <div class="why-card">
-        <div class="why-title">I've already shipped, not just studied</div>
-        <div class="why-body">This isn't a portfolio of class assignments. Four of my systems are live and in production use right now &mdash; processing real policies, real claims, real patient triage requests. I know what breaks when a model meets messy, real-world data, because I've already watched it happen and fixed it.</div>
+        <div class="why-title">I've already shipped</div>
+        <div class="why-body">Four of my systems are live right now, handling real policies and real claims, not sitting in a notebook.</div>
       </div>
       <div class="why-card">
-        <div class="why-title">I catch the mistake before it costs you</div>
-        <div class="why-body">More than once, my actuarial training has stopped a model from shipping with a hidden flaw &mdash; a leaked variable, a suspiciously perfect accuracy score, a stat that looked great but meant nothing. I'm trained to distrust a number until I understand why it's true.</div>
+        <div class="why-title">I catch mistakes early</div>
+        <div class="why-body">My actuarial training makes me distrust a number until I know why it's true. That's caught real errors before they shipped.</div>
       </div>
     </div>
   </div>
 </section>
 </section>
 
-<!-- ═══════════════ JOURNEY (narrative) ═══════════════ -->
+<!-- JOURNEY -->
 <section class="panel" id="panel-journey">
 <section class="section">
   <div class="section-head">
     <span class="section-eyebrow">The Journey</span>
     <div class="section-rule"></div>
   </div>
-  <p class="section-intro">Not a list of job titles &mdash; the actual problems I was handed, and how I solved them, roughly in the order they happened.</p>
+  <p class="section-intro">The problems I was actually handed, roughly in the order they happened.</p>
 
   <div class="journey-list">
 
@@ -732,18 +715,8 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="journey-period">Jun 2022 &ndash; Jul 2024</div>
       <div>
         <div class="journey-role">Claims Analyst <span>&middot; Kenyatta National Hospital</span></div>
-        <div class="journey-block">
-          <div class="journey-label">The problem</div>
-          <div class="journey-text">A national hospital processes an enormous number of insurance claims. Some are honest. Some aren't. Finding the second kind by hand, after the fact, is slow and it's already too late.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">What I did</div>
-          <div class="journey-text">Built the data pipelines that cleaned and organised claims data, then used pattern-detection techniques to flag claims that looked statistically unusual &mdash; before they were paid out, not after.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">In plain terms</div>
-          <div class="journey-text"><strong>This is where I learned that a model is only useful if it catches the problem in time to matter.</strong> A fraud flag raised six months later is just a post-mortem.</div>
-        </div>
+        <div class="journey-text">A national hospital processes a huge volume of insurance claims, some honest, some not. I built the pipelines that cleaned the data and flagged unusual claims before they were paid out, not after.</div>
+        <div class="journey-meaning">This is where I learned a model only matters if it catches the problem in time.</div>
       </div>
     </div>
 
@@ -751,37 +724,17 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="journey-period">Aug &ndash; Dec 2024</div>
       <div>
         <div class="journey-role">Junior Underwriter <span>&middot; Incourage Insurance</span></div>
-        <div class="journey-block">
-          <div class="journey-label">The problem</div>
-          <div class="journey-text">Someone has to decide whether to accept an insurance application, and at what price. Get it wrong too often in either direction &mdash; too cautious or too generous &mdash; and the business loses money.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">What I did</div>
-          <div class="journey-text">Applied statistical risk assessment to real applications, learning first-hand the judgment calls an underwriter has to defend &mdash; the exact judgment I now try to teach my AI systems to replicate.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">In plain terms</div>
-          <div class="journey-text"><strong>This is where "explainable AI" stopped being a buzzword for me.</strong> I'd sat in the underwriter's chair. I knew exactly what a good explanation needed to sound like.</div>
-        </div>
+        <div class="journey-text">Someone has to decide whether to accept an application, and at what price. I applied statistical risk assessment to real applications, learning the judgment calls an underwriter has to defend.</div>
+        <div class="journey-meaning">This is where "explainable AI" stopped being a buzzword. I'd sat in the underwriter's chair myself.</div>
       </div>
     </div>
 
     <div class="journey-item">
       <div class="journey-period">Dec 2024 &ndash; May 2025</div>
       <div>
-        <div class="journey-role">Customer Success Assistant, AI &amp; Data <span>&middot; Incourage Insurance</span></div>
-        <div class="journey-block">
-          <div class="journey-label">The problem</div>
-          <div class="journey-text">The company's AI chatbot was slow to answer and inconsistent, which meant customers gave up and called a human instead &mdash; expensive, and avoidable.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">What I did</div>
-          <div class="journey-text">Analysed real customer conversations to find where the bot was failing, then redesigned its response logic.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">In plain terms</div>
-          <div class="journey-text"><strong>Response time dropped by roughly a third.</strong> That's the difference between a customer who stays on the chat and one who hangs up and calls instead.</div>
-        </div>
+        <div class="journey-role">Customer Success Assistant, AI & Data <span>&middot; Incourage Insurance</span></div>
+        <div class="journey-text">The company's chatbot was slow and inconsistent, so customers gave up and called instead. I analysed real conversations to find where it failed, then redesigned its response logic.</div>
+        <div class="journey-meaning">Response time dropped by about a third. That's the difference between a customer who stays and one who hangs up.</div>
       </div>
     </div>
 
@@ -789,18 +742,8 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="journey-period">May 2025 &ndash; Present</div>
       <div>
         <div class="journey-role">Research Scholar <span>&middot; iLabAfrica, Strathmore University</span></div>
-        <div class="journey-block">
-          <div class="journey-label">The problem</div>
-          <div class="journey-text">Government offices, hospitals, and businesses across Kenya have operational software with no easy way to see what their own data is telling them &mdash; or to add AI to it responsibly.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">What I did</div>
-          <div class="journey-text">Built full production systems end to end &mdash; database, backend, and the dashboards people actually look at &mdash; and designed the AI prompt systems that sit inside them, including one that reads an employee's mood from a single emoji and responds in a way that fits their organisation's culture.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">In plain terms</div>
-          <div class="journey-text"><strong>I'm the person who takes an AI idea from "wouldn't it be nice if" to something a non-technical office actually uses every day.</strong></div>
-        </div>
+        <div class="journey-text">Government offices and hospitals across Kenya have software with no easy way to read their own data. I build full production systems end to end, database through dashboard, and design the AI that sits inside them.</div>
+        <div class="journey-meaning">I'm the person who takes an AI idea from wish list to something a non-technical office uses every day.</div>
       </div>
     </div>
 
@@ -808,36 +751,25 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="journey-period">2025 &ndash; Present</div>
       <div>
         <div class="journey-role">Founder <span>&middot; Vondetta</span></div>
-        <div class="journey-block">
-          <div class="journey-label">The problem</div>
-          <div class="journey-text">East African insurers, health systems, and county governments want AI, but most AI vendors either oversell what a model can do, or build something so opaque nobody can trust it with real decisions.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">What I did</div>
-          <div class="journey-text">Started my own firm to fill that gap: production-grade underwriting engines, fraud detection, churn models, and clinical triage tools &mdash; four of which are already live.</div>
-        </div>
-        <div class="journey-block">
-          <div class="journey-label">In plain terms</div>
-          <div class="journey-text"><strong>I didn't wait for permission to build the thing I thought the market needed.</strong> That's the same instinct I'd bring in-house to any team I join.</div>
-        </div>
+        <div class="journey-text">East African insurers and county governments want AI, but most vendors oversell it or build something too opaque to trust. I started my own firm to build underwriting, fraud, and triage tools instead. Four are already live.</div>
+        <div class="journey-meaning">I didn't wait for permission to build what the market needed. I'd bring that same instinct in-house.</div>
       </div>
     </div>
 
   </div>
 
-  <!-- TRAJECTORY -->
-  <div class="trajectory" style="margin: 3.5rem -3rem -5.5rem; padding: 4rem 3rem;">
+  <div class="trajectory" style="margin: 3rem -3rem -5rem; padding: 3.5rem 3rem;">
     <div class="section-head">
       <span class="section-eyebrow">Where This Is Going</span>
       <div class="section-rule"></div>
     </div>
     <p class="trajectory-text">
-      I'll be candid: my career is still early and fast-moving, built on project depth rather than a decade of enterprise titles. I think that's a fair trade for someone who has gone from claims analytics to underwriting to research scholarship to founding a company, in under three years. The throughline across all of it is one question, asked in different rooms: <em>what does this number mean for the person who has to live with the decision it produces?</em>
+      I'll be candid: my career is still early, built on project depth rather than a decade of titles. I think that's a fair trade for someone who went from claims analytics to underwriting to research scholarship to founding a company, in under three years. The throughline is one question, asked in different rooms: <em>what does this number mean for the person who has to live with the decision it produces?</em>
     </p>
     <div class="path-row">
       <span class="path-step">Claims Analytics</span><span class="path-arrow">&#8594;</span>
       <span class="path-step">Underwriting</span><span class="path-arrow">&#8594;</span>
-      <span class="path-step">AI &amp; Customer Systems</span><span class="path-arrow">&#8594;</span>
+      <span class="path-step">AI & Customer Systems</span><span class="path-arrow">&#8594;</span>
       <span class="path-step">Research Scholarship</span><span class="path-arrow">&#8594;</span>
       <span class="path-step">Founder, Vondetta</span>
     </div>
@@ -845,19 +777,19 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
 </section>
 </section>
 
-<!-- ═══════════════ WORK ═══════════════ -->
+<!-- WORK -->
 <section class="panel" id="panel-work">
-<section class="section" style="padding-top:6.5rem;">
+<section class="section" style="padding-top:6rem;">
   <div class="section-head">
     <span class="section-eyebrow">Selected Work</span>
     <div class="section-rule"></div>
   </div>
-  <p class="section-intro">Every project below follows the same shape: what the problem actually was, what I built to solve it, and &mdash; because a metric alone doesn't mean much &mdash; what that result actually means for the people using it.</p>
+  <p class="section-intro">What the problem was, what I built, and what the result actually means.</p>
   <div class="work-filter">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="insurance">Insurance &amp; Risk</button>
-    <button class="filter-btn" data-filter="quant">Quant &amp; Finance</button>
-    <button class="filter-btn" data-filter="policy">Policy &amp; Health</button>
+    <button class="filter-btn" data-filter="insurance">Insurance & Risk</button>
+    <button class="filter-btn" data-filter="quant">Quant & Finance</button>
+    <button class="filter-btn" data-filter="policy">Policy & Health</button>
   </div>
   <div class="work-list" id="workList">
 
@@ -865,8 +797,8 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="work-period">2025&ndash;2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">Karbima Care</span><span class="work-role">Lead Engineer</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Getting an auto insurance quote in Kenya used to mean a broker manually reading your logbook and ID, then keying everything in by hand. Slow, and error-prone. <strong>What I built:</strong> An AI brokerage platform that reads logbooks and IDs automatically (OCR), searches a 105,000-document knowledge base to find the right policy match, and runs four separate ML models behind the scenes to price it.</p>
-        <div class="work-meaning"><b>In plain terms</b>What used to take a broker most of a day now takes under two hours. A customer isn't waiting around wondering if their quote is coming.</div>
+        <p class="work-desc"><strong>The problem:</strong> Getting an auto insurance quote in Kenya meant a broker manually reading your logbook and ID. Slow, and error-prone. <strong>What I built:</strong> A platform that reads documents automatically, searches a 105,000-document knowledge base for the right match, and prices it with four ML models.</p>
+        <div class="work-meaning"><b>What it means</b>A broker's full day of work now takes under two hours.</div>
         <div class="work-tags"><span class="work-tag">FAISS</span><span class="work-tag">FastAPI</span><span class="work-tag">OCR</span></div>
         <a class="work-link" href="https://car-bima-insurance.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
@@ -877,8 +809,8 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="work-period">2025&ndash;2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">UnderwriteGPT</span><span class="work-role">Lead Engineer</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Small and mid-sized African insurance agencies can't afford the underwriting software big insurers use, so a single agent can only process a handful of applications a day. <strong>What I built:</strong> An underwriting engine trained on 58,592 real historical policies that not only returns a decision, but points to similar past cases as evidence &mdash; the way an experienced underwriter would explain their own reasoning.</p>
-        <div class="work-meaning"><b>In plain terms</b>The system agrees with what an experienced human underwriter would decide about 9 times out of 10, and it does it in the time it takes to blink. One agent can now handle roughly ten times the applications they could before.</div>
+        <p class="work-desc"><strong>The problem:</strong> Small African insurance agencies can't afford enterprise underwriting software, so one agent can only process a handful of applications a day. <strong>What I built:</strong> An underwriting engine trained on 58,592 real policies that points to similar past cases as evidence, the way an experienced underwriter explains their reasoning.</p>
+        <div class="work-meaning"><b>What it means</b>It agrees with an experienced underwriter about 9 times out of 10, in the time it takes to blink. One agent now handles roughly ten times the applications.</div>
         <div class="work-tags"><span class="work-tag">Sentence-BERT</span><span class="work-tag">Explainable AI</span></div>
         <a class="work-link" href="https://underwrite-gpt-v2.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
@@ -889,43 +821,43 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="work-period">2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">Insurance Customer Analytics Platform</span><span class="work-role">Lead Engineer</span></div>
-        <p class="work-desc"><strong>The problem:</strong> A &euro;25.8 million insurance portfolio was losing customers, and nobody could say clearly which acquisition channel &mdash; agents or brokers &mdash; was actually worth more over time, or which customers were about to leave. <strong>What I built:</strong> A five-layer analytics platform predicting churn and claims, plus a lifetime-value model comparing acquisition channels directly.</p>
-        <div class="work-meaning"><b>In plain terms</b>Customers who signed up through an agent were worth about &euro;483 more, on average, than those who came through a broker &mdash; a gap nobody had put a number on before. A retention tool built on top of this saved about &euro;33 in customers kept for every &euro;1 spent building it.</div>
+        <p class="work-desc"><strong>The problem:</strong> A &euro;25.8 million insurance portfolio was losing customers, and nobody knew which channel, agents or brokers, was worth more over time. <strong>What I built:</strong> A platform predicting churn and claims, plus a lifetime-value model comparing both channels directly.</p>
+        <div class="work-meaning"><b>What it means</b>Agent-sourced customers were worth about &euro;483 more on average, a gap nobody had measured before. A retention tool built on this returned about &euro;33 in customers kept for every &euro;1 spent.</div>
         <div class="work-tags"><span class="work-tag">XGBoost</span><span class="work-tag">MLflow</span><span class="work-tag">Docker</span></div>
         <a class="work-link" href="https://automobile-rho.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
-      <div class="work-metric"><div class="work-metric-value">&euro;483</div><div class="work-metric-label">value gap uncovered, per customer</div></div>
+      <div class="work-metric"><div class="work-metric-value">&euro;483</div><div class="work-metric-label">value gap found, per customer</div></div>
     </div>
 
     <div class="work-item" data-cat="insurance">
       <div class="work-period">2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">AIG Marine Liability Pricing</span><span class="work-role">Actuarial Simulation</span></div>
-        <p class="work-desc"><strong>The problem:</strong> A shipping company needs an insurer to quote next year's premium. Quote too low and the insurer eats the losses when something goes wrong at sea; too high and they lose the client to a competitor. <strong>What I built:</strong> A full actuarial pricing model, plus a live dashboard letting a non-technical stakeholder adjust assumptions and immediately see how the price changes.</p>
-        <div class="work-meaning"><b>In plain terms</b>I turned six years of messy claims history into one defensible number: $13 million. Not a guess &mdash; a number that shows its own working, and holds up even if next year turns out worse than expected.</div>
+        <p class="work-desc"><strong>The problem:</strong> A shipping company needs a premium quote. Too low and the insurer eats future losses; too high and they lose the client. <strong>What I built:</strong> A full pricing model, plus a live dashboard where a non-technical stakeholder can adjust assumptions and see the price change instantly.</p>
+        <div class="work-meaning"><b>What it means</b>Six years of messy claims history became one defensible number: $13 million. A number that shows its own working.</div>
         <div class="work-tags"><span class="work-tag">Credibility Theory</span><span class="work-tag">React</span></div>
         <a class="work-link" href="https://oceanic-shipping-analysis.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
-      <div class="work-metric"><div class="work-metric-value">$13<span class="unit">M</span></div><div class="work-metric-label">defensible premium, from raw claims data</div></div>
+      <div class="work-metric"><div class="work-metric-value">$13<span class="unit">M</span></div><div class="work-metric-label">defensible premium</div></div>
     </div>
 
     <div class="work-item" data-cat="quant">
       <div class="work-period">2025&ndash;2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">WorldQuant BRAIN Alpha Research</span><span class="work-role">Quant Research</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Systematic stock-trading strategies are notorious for looking great on paper and then falling apart the moment real conditions change. <strong>What I built:</strong> A trading signal blending earnings quality and short-term price patterns, stress-tested against exactly that kind of failure.</p>
-        <div class="work-meaning"><b>In plain terms</b>A "Sharpe ratio" is just a way of asking: are the gains steady, or did you get lucky? Professional fund managers consider 1.0 solid. Mine reached 2.27 &mdash; meaning steady, repeatable gains rather than a lucky streak.</div>
+        <p class="work-desc"><strong>The problem:</strong> Trading strategies often look great on paper, then fall apart when real conditions change. <strong>What I built:</strong> A signal blending earnings quality with short-term price patterns, stress-tested against that exact failure mode.</p>
+        <div class="work-meaning"><b>What it means</b>A Sharpe ratio asks: are the gains steady, or lucky? Fund managers consider 1.0 solid. Mine reached 2.27, steady and repeatable.</div>
         <div class="work-tags"><span class="work-tag">Factor Modeling</span><span class="work-tag">Risk-Adjusted Returns</span></div>
       </div>
-      <div class="work-metric"><div class="work-metric-value">2.<span class="unit">27</span></div><div class="work-metric-label">steadiness score (Sharpe ratio)</div></div>
+      <div class="work-metric"><div class="work-metric-value">2.<span class="unit">27</span></div><div class="work-metric-label">steadiness score</div></div>
     </div>
 
     <div class="work-item" data-cat="quant">
       <div class="work-period">2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">GARCH Volatility Forecasting</span><span class="work-role">Research</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Bitcoin is famous for wild price swings. Anyone pricing an option or deciding when to buy in needs to know: after a shock, how long until things calm back down? <strong>What I built:</strong> A statistical model of Bitcoin's volatility over three years of daily data, comparing four different modelling approaches to find the one that actually fit.</p>
-        <div class="work-meaning"><b>In plain terms</b>After a price shock, Bitcoin's volatility calms down to half its peak within about a week &mdash; and, unlike stocks, it reacts the same way to good news as bad news. That's a very different risk profile from traditional markets, with real pricing implications.</div>
+        <p class="work-desc"><strong>The problem:</strong> Bitcoin swings wildly. Anyone pricing an option needs to know how long a shock takes to calm down. <strong>What I built:</strong> A volatility model over three years of daily data, comparing four modelling approaches to find the one that actually fit.</p>
+        <div class="work-meaning"><b>What it means</b>After a shock, volatility halves within about a week. Unlike stocks, Bitcoin reacts the same way to good news and bad news.</div>
         <div class="work-tags"><span class="work-tag">arch</span><span class="work-tag">statsmodels</span><span class="work-tag">MLE</span></div>
       </div>
       <div class="work-metric"><div class="work-metric-value">6.<span class="unit">9d</span></div><div class="work-metric-label">time for a shock to calm down</div></div>
@@ -935,8 +867,8 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="work-period">2025&ndash;Present</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">Housing Financial Vulnerability Score</span><span class="work-role">MSc Dissertation</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Kenya runs a massive national housing survey every few years, but nobody had turned it into a usable early-warning tool for which households are financially vulnerable. <strong>What I built:</strong> A vulnerability score covering 21,347 households across all 47 counties, built to be trustworthy enough for an actual insurer or lender to price against.</p>
-        <div class="work-meaning"><b>In plain terms</b>The single biggest factor separating a financially secure household from a vulnerable one wasn't income &mdash; it was whether they owned their land. That's the kind of finding a policymaker or insurer can actually act on.</div>
+        <p class="work-desc"><strong>The problem:</strong> Kenya runs a massive national housing survey, but nobody had turned it into an early-warning tool. <strong>What I built:</strong> A vulnerability score covering 21,347 households across all 47 counties, built to be trustworthy enough for an insurer or lender to price against.</p>
+        <div class="work-meaning"><b>What it means</b>The strongest predictor of financial vulnerability wasn't income. It was whether the household owned their land.</div>
         <div class="work-tags"><span class="work-tag">XGBoost</span><span class="work-tag">SHAP</span><span class="work-tag">GeoPandas</span></div>
         <a class="work-link" href="https://kenya-housing-vulnerability-score.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
@@ -947,20 +879,20 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="work-period">2025, Kigali</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">HARAKA</span><span class="work-role">Team Lead</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Community health workers across East Africa see patients in places with no smartphones, no internet, and sometimes no shared language with a doctor 100km away. <strong>What I built:</strong> An AI triage assistant, following WHO's official child-illness protocol, that works over basic USSD (the same tech behind mobile money menus) in English, Kiswahili, and Kinyarwanda.</p>
-        <div class="work-meaning"><b>In plain terms</b>A health worker can text a patient's symptoms from the most basic phone and get back a trustworthy answer, in their own language, with no internet connection required. It won a Harvard hackathon honourable mention.</div>
+        <p class="work-desc"><strong>The problem:</strong> Community health workers see patients with no smartphones, no internet, and no shared language with a distant doctor. <strong>What I built:</strong> An AI triage assistant following WHO's child-illness protocol, working over basic USSD in English, Kiswahili, and Kinyarwanda.</p>
+        <div class="work-meaning"><b>What it means</b>A health worker texts symptoms from the most basic phone and gets a trustworthy answer, in their own language. Won a Harvard hackathon honourable mention.</div>
         <div class="work-tags"><span class="work-tag">USSD</span><span class="work-tag">Health Tech</span><span class="work-tag">Multilingual</span></div>
         <a class="work-link" href="https://haraka-med-health-assist.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
-      <div class="work-metric"><div class="work-metric-value">3</div><div class="work-metric-label">languages, zero smartphone needed</div></div>
+      <div class="work-metric"><div class="work-metric-value">3</div><div class="work-metric-label">languages, no smartphone needed</div></div>
     </div>
 
     <div class="work-item" data-cat="policy">
       <div class="work-period">Jan&ndash;Mar 2026</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">Maji Safi River Intelligence</span><span class="work-role">EY Challenge</span></div>
-        <p class="work-desc"><strong>The problem:</strong> Testing river water quality by hand is slow and can't cover a whole country. Pollution can go undetected for months. <strong>What I built:</strong> A model that reads satellite images and estimates water quality without anyone needing to visit the river in person, covering over 6,400 location-and-month combinations.</p>
-        <div class="work-meaning"><b>In plain terms</b>It can flag a river that's getting polluted from space, days or weeks before someone would have noticed it on the ground.</div>
+        <p class="work-desc"><strong>The problem:</strong> Testing river water by hand is slow, so pollution can go undetected for months. <strong>What I built:</strong> A model reading satellite images to estimate water quality, no site visit needed, across 6,400 location-month readings.</p>
+        <div class="work-meaning"><b>What it means</b>It can flag a polluted river from space, days or weeks before anyone would notice on the ground.</div>
         <div class="work-tags"><span class="work-tag">Snowflake</span><span class="work-tag">Geospatial</span></div>
       </div>
       <div class="work-metric"><div class="work-metric-value">6.<span class="unit">4K+</span></div><div class="work-metric-label">river readings, from orbit</div></div>
@@ -970,19 +902,19 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <div class="work-period">Ongoing</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">County Revenue Dashboard</span><span class="work-role">GovTech</span></div>
-        <p class="work-desc"><strong>The problem:</strong> A Kenyan county government couldn't easily tell, mid-year, whether it was on track to hit its own revenue targets &mdash; the numbers were scattered across departments and only came together at year-end reporting time.</p>
-        <div class="work-meaning"><b>In plain terms</b>Officials can now see, on any given day, whether the county is ahead or behind target &mdash; instead of finding out in a report six months too late to do anything about it.</div>
+        <p class="work-desc"><strong>The problem:</strong> A Kenyan county couldn't tell, mid-year, whether it was on track to hit revenue targets. The numbers only came together at year-end.</p>
+        <div class="work-meaning"><b>What it means</b>Officials now see, any given day, whether the county is ahead or behind target, instead of finding out six months too late.</div>
         <div class="work-tags"><span class="work-tag">Vue.js</span><span class="work-tag">Laravel</span></div>
       </div>
-      <div class="work-metric"><div class="work-metric-value">1</div><div class="work-metric-label">county government, live in production</div></div>
+      <div class="work-metric"><div class="work-metric-value">1</div><div class="work-metric-label">county, live in production</div></div>
     </div>
 
     <div class="work-item" data-cat="quant">
       <div class="work-period">Independent</div>
       <div class="work-main">
         <div class="work-title-row"><span class="work-title">MiraaTrans</span><span class="work-role">Operations Research</span></div>
-        <p class="work-desc"><strong>The problem:</strong> A perishable-goods transport business in Meru County wanted to know if their quick, manual route-planning method was actually any good, or if they should be paying for expensive logistics software. <strong>What I built:</strong> A mathematical proof comparing their manual method against the true optimal solution.</p>
-        <div class="work-meaning"><b>In plain terms</b>Their manual estimate matched the mathematically optimal answer exactly &mdash; so I saved them from buying software they didn't actually need.</div>
+        <p class="work-desc"><strong>The problem:</strong> A perishable-goods transporter wanted to know if their manual route planning was any good, or if they should pay for logistics software. <strong>What I built:</strong> A mathematical proof comparing their method against the true optimal solution.</p>
+        <div class="work-meaning"><b>What it means</b>Their manual estimate matched the optimal answer exactly. I saved them from buying software they didn't need.</div>
         <div class="work-tags"><span class="work-tag">Linear Programming</span><span class="work-tag">Logistics</span></div>
         <a class="work-link" href="https://vam-miraa-transportation-problem.vercel.app/" target="_blank" rel="noopener">View the live platform &#8594;</a>
       </div>
@@ -991,13 +923,13 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
 
   </div>
 
-  <div style="margin-top:2.5rem;">
-    <a class="work-link" href="https://github.com/VAL-Jerono/Kenya_Food_Prices_Data_Engineering" target="_blank" rel="noopener">There's more on GitHub, including the full data-engineering pipeline behind Kenya's food price data &#8594;</a>
+  <div style="margin-top:2.2rem;">
+    <a class="work-link" href="https://github.com/VAL-Jerono/Kenya_Food_Prices_Data_Engineering" target="_blank" rel="noopener">More on GitHub, including a data-engineering pipeline for Kenya's food price data &#8594;</a>
   </div>
 </section>
 </section>
 
-<!-- ═══════════════ CRAFT ═══════════════ -->
+<!-- CRAFT -->
 <section class="panel" id="panel-craft">
 <section class="section craft">
   <div class="section-head">
@@ -1007,39 +939,39 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   <p class="section-intro">The toolkit, and what each part is actually for.</p>
   <div class="skills-grid" id="skillsGrid">
     <div class="skill-block">
-      <div class="skill-name">Machine Learning &amp; Stats</div>
-      <div class="skill-plain">The models that turn messy data into a prediction &mdash; who will claim, who will churn, what something is really worth.</div>
+      <div class="skill-name">Machine Learning & Stats</div>
+      <div class="skill-plain">Turns messy data into a prediction: who will claim, who will churn, what something is worth.</div>
       <div class="skill-list">XGBoost &middot; Random Forest &middot; LightGBM &middot; GARCH &middot; OLS/MLE &middot; SMOTE &middot; Spatial CV</div>
     </div>
     <div class="skill-block">
       <div class="skill-name">AI Systems</div>
-      <div class="skill-plain">The plumbing that lets a chatbot or assistant search real documents and answer with evidence, not guesses.</div>
+      <div class="skill-plain">Lets an assistant search real documents and answer with evidence, not guesses.</div>
       <div class="skill-list">RAG Pipelines &middot; FAISS &middot; LLM Integration &middot; NLP &middot; Knowledge Graphs &middot; Embeddings</div>
     </div>
     <div class="skill-block">
       <div class="skill-name">Actuarial Science</div>
-      <div class="skill-plain">The discipline behind putting a defensible price on uncertainty &mdash; where I started, and still where I check my work.</div>
+      <div class="skill-plain">The discipline of putting a defensible price on uncertainty. Where I started, and still where I check my work.</div>
       <div class="skill-list">Risk Modeling &middot; Premium Calculation &middot; Credibility Theory &middot; IBNR &middot; CLV &middot; Fraud Detection</div>
     </div>
     <div class="skill-block">
       <div class="skill-name">Engineering</div>
-      <div class="skill-plain">Turning a model from a notebook into something real people can actually open and use.</div>
+      <div class="skill-plain">Turns a model from a notebook into something people can actually open and use.</div>
       <div class="skill-list">Python &middot; PHP &middot; Laravel &middot; Vue.js &middot; React &middot; FastAPI &middot; Django &middot; MySQL &middot; Snowflake</div>
     </div>
     <div class="skill-block">
-      <div class="skill-name">Data &amp; Visualization</div>
-      <div class="skill-plain">Making a dataset explain itself to someone who has thirty seconds to look at it.</div>
+      <div class="skill-name">Data & Visualization</div>
+      <div class="skill-plain">Makes a dataset explain itself to someone with thirty seconds to look at it.</div>
       <div class="skill-list">Pandas &middot; Scikit&#8209;learn &middot; Power BI &middot; Streamlit &middot; GeoPandas &middot; Satellite Imagery</div>
     </div>
     <div class="skill-block">
       <div class="skill-name">Deployment</div>
-      <div class="skill-plain">Getting a system live, keeping it running, and knowing the moment something breaks.</div>
+      <div class="skill-plain">Gets a system live, keeps it running, flags the moment something breaks.</div>
       <div class="skill-list">Vercel &middot; Render &middot; Supabase &middot; Docker &middot; MLflow &middot; Git &middot; Monitoring</div>
     </div>
   </div>
 </section>
 
-<section class="section" id="writing" style="padding-top:2rem;">
+<section class="section" id="writing" style="padding-top:1.5rem;">
   <div class="section-head">
     <span class="section-eyebrow">Writing</span>
     <div class="section-rule"></div>
@@ -1068,21 +1000,21 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
     </a>
     <a class="writing-item" href="https://medium.com/@Vondetta" target="_blank" rel="noopener">
       <span class="writing-num">&#8594;</span>
-      <span class="writing-title">All writing on Medium &mdash; medium.com/@Vondetta</span>
+      <span class="writing-title">All writing on Medium: medium.com/@Vondetta</span>
       <span class="writing-arrow">&#8594;</span>
     </a>
   </div>
 </section>
 </section>
 
-<!-- ═══════════════ REFERENCES ═══════════════ -->
+<!-- REFERENCES -->
 <section class="panel" id="panel-references">
 <section class="section">
   <div class="section-head">
     <span class="section-eyebrow">References</span>
     <div class="section-rule"></div>
   </div>
-  <p class="ref-note">People who have directly managed or worked alongside me. To protect their privacy, I don't publish their contact details here &mdash; request one below and I'll be notified by email to share it with you directly.</p>
+  <p class="ref-note">People who directly managed or worked alongside me. I don't publish their contact details here. Request one below and I'll be notified by email to share it with you directly.</p>
   <div class="ref-grid">
 
     <div class="ref-card">
@@ -1130,14 +1062,14 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       <textarea id="refReqNote" rows="3" placeholder="e.g. Considering Valerie for an ML Engineer role"></textarea>
     </div>
     <div class="ref-modal-actions">
-      <button class="cf-btn" style="margin:0;" onclick="sendRefRequest()">Notify Valerie</button>
+      <button class="cf-btn" style="margin:0;" onclick="sendRefRequest()">Notify me</button>
       <button class="ref-modal-cancel" onclick="closeRefModal()">Cancel</button>
     </div>
-    <div class="ref-status" id="refStatus">Thanks &mdash; your email app should have opened with the request ready to send. Once it's sent, Valerie will follow up with you directly.</div>
+    <div class="ref-status" id="refStatus">Thanks. Your email app should have opened with the request ready to send. Once it's sent, I'll follow up with you directly.</div>
   </div>
 </div>
 
-<!-- ═══════════════ CONTACT ═══════════════ -->
+<!-- CONTACT -->
 <section class="panel" id="panel-contact">
 <section class="section contact">
   <div class="section-head">
@@ -1147,7 +1079,7 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   <div class="contact-inner">
     <div>
       <h2 class="contact-big">Tell me what you are <em>trying to decide.</em></h2>
-      <p class="contact-sub">If you're an insurer, a health system, a government office, or a team trying to make a high-stakes decision with imperfect data &mdash; that's the work I want to hear about.</p>
+      <p class="contact-sub">If you're an insurer, a health system, a government office, or a team making a high-stakes decision with imperfect data, that's the work I want to hear about.</p>
       <div class="contact-links">
         <a class="contact-link" href="https://linkedin.com/in/valerie-jerono" target="_blank" rel="noopener"><span class="cl-label">LinkedIn</span><span class="cl-val">Valerie Jerono</span></a>
         <a class="contact-link" href="https://medium.com/@Vondetta" target="_blank" rel="noopener"><span class="cl-label">Medium</span><span class="cl-val">@Vondetta</span></a>
@@ -1167,12 +1099,11 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
 </section>
 
 <footer>
-  <span class="footer-left">Valerie Jerono &mdash; Nairobi, Kenya</span>
+  <span class="footer-left">Valerie Jerono, Nairobi, Kenya</span>
   <span class="footer-right">&copy; 2026 &middot; Founder, Vondetta</span>
 </footer>
 
 <script>
-  // ───────── Theme toggle: defaults to LIGHT, ignores system preference ─────────
   const root = document.documentElement;
   const toggle = document.getElementById('themeToggle');
   const label = document.getElementById('themeLabel');
@@ -1186,7 +1117,6 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
     label.textContent = theme === 'dark' ? 'Light' : 'Dark';
   });
 
-  // ───────── Tabs ─────────
   function showTab(name) {
     document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
     const target = document.getElementById('panel-' + name);
@@ -1199,7 +1129,6 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
     document.getElementById('navLinks').classList.toggle('mobile-open');
   });
 
-  // ───────── References modal + mailto notification ─────────
   let currentRefName = '';
   function openRefModal(name) {
     currentRefName = name;
@@ -1228,7 +1157,6 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
     if (e.target === e.currentTarget) closeRefModal();
   });
 
-  // ───────── Scroll reveal ─────────
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.15 });
@@ -1246,10 +1174,8 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
     el.style.transitionDelay = (i * 0.05) + 's';
     revealObserver.observe(el);
   });
-  // reveal stats immediately since they're above the fold
   setTimeout(() => document.querySelectorAll('.stat').forEach(el => el.classList.add('visible')), 100);
 
-  // ───────── Work filter ─────────
   const filterBtns = document.querySelectorAll('.filter-btn');
   const workItems = document.querySelectorAll('.work-item');
   filterBtns.forEach(btn => {
@@ -1269,9 +1195,7 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
 
   function handleSubmit(e) {
     e.preventDefault();
-    const name = encodeURIComponent(document.getElementById('cf-name').value);
     const email = document.getElementById('cf-email').value;
-    const msg = encodeURIComponent(document.getElementById('cf-msg').value);
     const subject = encodeURIComponent('Portfolio contact from ' + document.getElementById('cf-name').value);
     const body = encodeURIComponent('From: ' + document.getElementById('cf-name').value + ' (' + email + ')\n\n' + document.getElementById('cf-msg').value);
     window.location.href = 'mailto:hello@vondetta.io?subject=' + subject + '&body=' + body;
@@ -1281,7 +1205,6 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
   }
 </script>
 <script>
-  // ───────── Live "decision boundary" hero visual ─────────
   (function () {
     const canvas = document.getElementById('modelCanvas');
     if (!canvas) return;
