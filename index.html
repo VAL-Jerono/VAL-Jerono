@@ -300,10 +300,15 @@ nav {
 .about-body { display: flex; flex-direction: column; gap: 1.2rem; }
 .about-body p { font-size: 0.96rem; color: var(--ink-soft); line-height: 1.75; }
 .about-body p strong { color: var(--ink); font-weight: 600; }
-.about-creds { margin-top: 0.4rem; display: flex; flex-direction: column; gap: 0.6rem; border-top: 1px solid var(--line); padding-top: 1.2rem; }
-.cred-row { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.85rem; flex-wrap: wrap; }
-.cred-label { color: var(--ink-soft); }
-.cred-val { font-family: var(--mono); color: var(--ink); font-weight: 500; text-align: right; }
+.about-creds { margin-top: 0.4rem; display: flex; flex-direction: column; gap: 0.9rem; border-top: 1px solid var(--line); padding-top: 1.2rem; }
+.cred-group { display: flex; flex-direction: column; gap: 0.4rem; }
+.cred-group-label { font-family: var(--mono); font-size: 0.72rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+.cred-items { list-style: none; display: flex; flex-direction: column; gap: 0.3rem; }
+.cred-items li { font-family: var(--mono); font-size: 0.85rem; color: var(--ink); font-weight: 500; }
+.trajectory-wrap { margin: 3rem -3rem -5rem; padding: 3.5rem 3rem; }
+@media (max-width: 880px) {
+  .trajectory-wrap { margin: 2.5rem -1.25rem -4rem; padding: 2.5rem 1.25rem; }
+}
 
 .niche-pills { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.2rem; }
 .niche-pill {
@@ -665,13 +670,30 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       </div>
     </div>
     <div class="about-body">
-      <p>I'm an actuary who learned to code, not a coder who picked up statistics. An actuary is trained to ask "what happens if I'm wrong, and who pays for it?" before anything else. I spent three years asking only that question, before I ever touched a model.</p>
+      <p>I trained as an actuary, then taught myself to build the models an actuary would want to audit. One discipline asks what happens if a number is wrong and who pays for it. The other asks how to actually build that number, from raw data to a working system. I use both, on purpose, on the same problem, which is what makes me useful on a data science or ML team rather than just an insurance one.</p>
       <p>Today, I build production software at <strong>iLabAfrica, Strathmore University</strong>, end to end, database through dashboard, for clients across government, healthcare, and conservation, and decide where the machine learning sits inside it. I'm also part of <strong>Vondetta</strong>, an AI research brand where a small group of Kenyan engineers builds homegrown, grassroots decision-support AI, for everyone from a mama mboga tracking her margins to a county official setting policy.</p>
       <p>My rule: if a client can't follow why my system made a decision, I haven't finished the job.</p>
       <div class="about-creds">
-        <div class="cred-row"><span class="cred-label">Education</span><span class="cred-val">MSc Data Science, Strathmore &middot; BSc Actuarial Science, Daystar</span></div>
-        <div class="cred-row"><span class="cred-label">Based in</span><span class="cred-val">Nairobi, Kenya</span></div>
-        <div class="cred-row"><span class="cred-label">Certified</span><span class="cred-val">AIG Actuarial Analyst (Forage) &middot; WorldQuant BRAIN, Gold Level</span></div>
+        <div class="cred-group">
+          <span class="cred-group-label">Education</span>
+          <ul class="cred-items">
+            <li>MSc Data Science, Strathmore University</li>
+            <li>BSc Actuarial Science, Daystar University</li>
+          </ul>
+        </div>
+        <div class="cred-group">
+          <span class="cred-group-label">Based in</span>
+          <ul class="cred-items">
+            <li>Nairobi, Kenya</li>
+          </ul>
+        </div>
+        <div class="cred-group">
+          <span class="cred-group-label">Certified</span>
+          <ul class="cred-items">
+            <li>AIG Actuarial Analyst, Forage</li>
+            <li>WorldQuant BRAIN, Gold Level</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -692,7 +714,7 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
       </div>
       <div class="why-card">
         <div class="why-title">I catch mistakes early</div>
-        <div class="why-body">My actuarial training taught me to distrust a number until I can explain why it's true. On my MSc dissertation, that habit caught five data-coding defects that would otherwise have produced a fake, near-perfect accuracy score.</div>
+        <div class="why-body">On the Bima-Insight platform, I caught leakage in the claims severity model: features derived from the target had inflated its R&sup2; to a fake 0.645. The honest, leakage-free rebuild came in at 0.352, lower, but a number I could actually trust in production.</div>
       </div>
     </div>
   </div>
@@ -757,7 +779,7 @@ footer { padding: 1.8rem 3rem; border-top: 1px solid var(--line); display: flex;
 
   </div>
 
-  <div class="trajectory" style="margin: 3rem -3rem -5rem; padding: 3.5rem 3rem;">
+  <div class="trajectory trajectory-wrap">
     <div class="section-head">
       <span class="section-eyebrow">Where This Is Going</span>
       <div class="section-rule"></div>
